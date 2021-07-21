@@ -1,6 +1,6 @@
-# Predicting future sales
+# Suggest Mercari Product Price
 
-This is a final project of the Udacity Machine Learning Engineer with Microsoft Azure Nanodegree Program. The project's goal is to train and deploy a machine learning model for **prediction of total sales for every product and store in the next month**. The project starts with importing a challenging time-series dataset consisting of daily sales data from Kaggle. To find the best model, the project compares performance of models trained using Automated ML and one customized model whose hyperparameters are tuned using HyperDrive in the Microsoft Azure's ecosystem. The project wraps up with deploying the best model and testing its endpoint.
+This is a final project of the Udacity Machine Learning Engineer with Microsoft Azure Nanodegree Program. The project's goal is to train and deploy a machine learning model for **prediction of the sale price of a listing based on information a user provides for this listing**. The project starts with importing a dataset from Kaggle. To find the best model, the project compares performance of models trained using Automated ML and one customized model whose hyperparameters are tuned using HyperDrive in the Microsoft Azure's ecosystem. The project wraps up with deploying the best model and testing its endpoint.
 
 ## Project Set Up and Installation
 > *OPTIONAL:* If your project has any special installation steps, this is where you should put it. To turn this project into a professional portfolio project, you are encouraged to explain how to set up this project in AzureML.
