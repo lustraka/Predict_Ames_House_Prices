@@ -10,6 +10,7 @@ def load_data_raw():
     # Download the Ames Housing Dataset
     # Set the enviroment variables
     import os
+    import zipfile
     os.environ['KAGGLE_USERNAME'] = "lubomrstraka"
     os.environ['KAGGLE_KEY'] = "c7347462ef834e6645ce238c2f2fa561"
     
