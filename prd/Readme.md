@@ -10,12 +10,15 @@
 > Briefly, what is this project about?  Why are you doing it?
 
 A value proposition of this project has three levels, let's call them context, content, and code levels.
-+ A **context (strategy) level** offers an example of a data science solution to a business problem. It approaches data science solution as a business product that need a clear and concise technical specification to address the business problem in a proper way.
++ A **context (strategy) level** offers an example of a data science solution to a business problem. It approaches data science solution as a business product that needs a clear and concise technical specification to address the business problem in a proper way.
 + A **content (story line) level** introduces one canonical data mining task, namely regression or value estimation. This task attempts to estimate or predict for each house in Ames real estate dataset its sale price. The Ames Housing dataset hosted on Kaggle.com povides the content for data minining.
 + A **code (procedural) level** serves the need of passing the capstone project assignment in Udacity Machine Learning Engineer in Azure Nanadegree Program. This level determines application and infrastructure components of the data science solution.
 
 # Success Metrics
 > What are the success metrics that indicate you’re achieving your internal goals for the project?
++ **Customer Conversion Rate**: number of jobs won through reference to this portfolio project.
++ **RMSLE**: performance of the model, also score in a Kaggle competition.
++ **Project Pass**: passing the capstone project in Udacity Machine Learning Engineer with Microsoft Azure Nanodegree Program.
 
 <!-- TBD Conciseness: Note key decisions, add relevant links, and don’t leave anything up for interpretation. -->
 
