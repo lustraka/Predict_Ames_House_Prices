@@ -55,7 +55,7 @@ def tailor_ames(train, test=None):
     # The test set should be transformed in the same way as the train set.
     if test is not None:
       dft = test.copy()
-      df = pd.concat([df, dft])
+      df = pd.concat([df, dft], sort=False)
       df = ames.encode_dtypes(df) # Restore dtypes encoding
 
     df = drop_uninformative(df)
@@ -74,6 +74,7 @@ def tailor_ames(train, test=None):
     # Reform splits
     if test is not None:
       dft = df.loc[test.index, :]
+      dft.drop(columns=['SalePrice'], inplace=True)
       df.drop(test.index, inplace=True)
 
     if test is not None:
