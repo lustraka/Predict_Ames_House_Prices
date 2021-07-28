@@ -14,6 +14,8 @@ A value proposition of this project has three levels, let's call them context, c
 + A **content (story line) level** introduces one canonical data mining task, namely regression or value estimation. This task attempts to estimate or predict for each house in Ames real estate dataset its sale price. The Ames Housing dataset hosted on Kaggle.com povides the content for data minining.
 + A **code (procedural) level** serves the need of passing the capstone project assignment in Udacity Machine Learning Engineer in Azure Nanadegree Program. This level determines application and infrastructure components of the data science solution.
 
+![Product Overiview](http://www.plantuml.com/plantuml/png/RP5FIoin5CNNBv_YllAWVU0W26va65fhmMLnS5SejvdBD9e_8JSf5l6xcxHZgzXDc3CvF-Ptc2b7334PBVugAtNg26eCSgiCHhgUVJqrWb-LzHZGG20PqVQQwffZo9VzljgXJbJbI6YQ1jx5d-2IxUOkM0fmSoi-n7YXoP2DBEuJAqlCwsLmNP9nWbls_Wf6CqCCZwvSzolReYPO1YNBIPsIKJax-lyRxvWfqmyO4Lgfo4hAjDEf0B1uG-CrNGAJz9p1vmwbYdkOe-VeR8PpuIMlX3PjZ68-VdVclLOIOqxhbi8kYqqyReluu0Ud0OCuPqoCdqWVA1Q7eL1LK3XHl4-Xk9o2qDIJxKJzx_mlDeDzvO_s3Tp1C6GLBnQ3qtHeOOZxdnqyRwdukAKqlqs4uRN87Z3eJFEHZFu4)
+
 # Success Metrics
 > What are the success metrics that indicate you’re achieving your internal goals for the project?
 + **Customer Conversion Rate**: number of jobs won through reference to this portfolio project.
