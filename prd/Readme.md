@@ -25,6 +25,10 @@ A value proposition of this project has three levels, let's call them context, c
 # Messaging
 > What’s the product messaging marketing will use to describe this product to customers, both new and existing?
 
+**Data science will meet your expectations.**
+
+**Check in data science, check out business needs.**
+
 # Timeline/Release Planning
 > What’s the overall schedule you’re working towards?
 
