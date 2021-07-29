@@ -27,9 +27,9 @@ A value proposition of this project has three levels, let's call them context, c
 # Messaging
 > What’s the product messaging marketing will use to describe this product to customers, both new and existing?
 
-**Data science will meet your expectations.**
-
 **Check in data science, check out business needs.**
+
+**Data science meeting your requirements.**
 
 # Timeline/Release Planning
 > What’s the overall schedule you’re working towards?
@@ -47,7 +47,7 @@ A value proposition of this project has three levels, let's call them context, c
 # User Stories/Features/Requirements
 > These are the distinct, prioritized features along with a short explanation as to why this feature is important.
 
-![The Product and Key Deliverables](http://www.plantuml.com/plantuml/png/XPJVQzim4CVV_LTePQp9g9ttKKhJTR31reLqUoWOZ29T7QsofEf78MD__EuKjmwRtRn49-xpFUkYh-uoHEvZwdJnHXcXamHsphtOgev7M2oVeukYEFsaeGCJGt6LWZ8GGhFoLYOHPxpJuOoTB3i8xDjNTcjrYigQa_c0VhGcUewiynBHNidMy9YKtzUjpRKLYK8sMwslvuVoxvjVWEBemQ7w1uYjKO9hr3lhurbjwF0La-2qtUKI7JU9QwonT4uZImTghddaVQaWB1tarYOlWE46QZDRtPsnBwkxcwlvj91lvKkpdoqTiAsDn7o0YAfyDgjjkskMFghxlcVVeGRNnHguxA3gv0IRmMCGxu3EG4lbTknTRIXixW5tKv8KRQT9b8DAkPtPJB3RdOj8uWBUSO-r8_YcDZ4PW-s-gesUAuFYl5OYF4rn4EWRjFnFtLW9irR5RTeO397RRofXkuLE0Oi_y4LjLXwa4h5PKlTq6O2UL0B2IBa7thQQIks3N4fWZIt9IfTb9PTFt0YGPMqyj1v2KDQKCVljCK5Oq4LZyU9q3JfR8nJaVlQ-B1bUxx0XgmuxSjkm8miLfuYpypzLnR8z2YpOuBrhzNjlkP-kzmtbvsDfoj5dHfFP8lJTSMrlXsc0F32TxgyvTpAUXn0FqyiGL6lePLBsy6fpayUWumJrUvJ9JH-ZgFCnvjb0kVLN0GXOeD3GWf75-TjXdcxwULQw_VoxO1zOFmhhE0gAVcuIsS_GATJIVChWyzXa-v5L_wFWms0hoSy7okMGOZJpNYeSwkFBoofvViwzDiS4imdQM054qdkiOm56ilvFkiIVrEc_)
+![The Product and Key Deliverables](http://www.plantuml.com/plantuml/png/XLJVQzim47xtNw6LiIQZTjv7ANNNmGPR5zBjeM0mYdnrjCgIgX-5ZFtnkrESE6nsysATkE_xfFDzkciVk0knKzaRgOMA3R1BxiH6TZp0ejn7Lrbs_ab11phux2PwgS7xUkbC4qMOyKxv2tPMTk3Pjw_itgWOfD5dym7wqUZWE6AjQn3QCzaAdgDqEzrAtneHAMIpvUfsVap_llu5I0uEBB9_WDXeARX2lZKkN5IQBb-m1gmosoJHSHsvGetIMeLOkb1zomFlfRmmT95x4vq0XXkez6pvSC6-B1_kRkRJHBvf3iL-DdJ1jj8DvZq4PAMx6MNQRLsw81_xcbs775mNA-1D1qNNJ60Jy1I8u-48ewMmM_QkqXJMZu2xAKeCfbD4Ia4XxLQl9x2RhGs8n0MSvGwr0xYwqY5gZUM-oWsEIutaj1R2lqpXmDCPjFoFkiDsp5ePDd6jCKJSRbC8qorKz2Z-n1ULNZfef0XrITLJCm0zAGNu4RadthQAf7P1aXAeiI5QRXCjvyqBrmAQlD8EMWVUO_VpaFps7C4lgD4edfslG2Lh-8pSpzxdESFs3Xkowh0Zjmqxib1sZd1s-QSeMB97Xe8rzbt9tplB_RHxt-0o7qjJZeuPJIQBqBdZtDuEqu3aWUbqtsQgP3mFFXodI_oJhQQNITdZrgOYJu5E8wZUavXKz2aKLJw6sHiebVug03mAP0fQq4rs-NQOf-j-dkLsD_-ks0VMZy8gZ095FpS9sS_GAQYX-PI0-x79TYEh-eV1Xy6Mav-FcEMGOZJp3Wh7_71uMJbFpxddffZ0R09D_vUGz1wha85kMF-Jhl4JE_KN)
 
 # Features Out
 > What have you explicitly decided not to do and why
