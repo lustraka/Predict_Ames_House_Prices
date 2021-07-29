@@ -14,7 +14,9 @@ A value proposition of this project has three levels, let's call them context, c
 + A **content (or story line) level** is about one of the canonical data mining tasks. The goal of the project on this level is to estimate or predict sale prices of houses in Ames with a regression model trained on historical data. The Ames Housing dataset is downloadable from Kaggle.com. It is located in House Prices Advanced Regression Techniques ongoing competition connected with one of Kaggle's tutorials.
 + A **code (procedural) level** serves the need of passing the capstone project assignment in Udacity Machine Learning Engineer in Azure Nanadegree Program. This level determines application and infrastructure components of the data science solution.
 
-![Value Proposition of the Product](http://www.plantuml.com/plantuml/png/TP9F2nen4CNl-HIf55oXI-z5HDiABLIGBkr9a34PD6t-B3iJqM_VpBhMMlKIdEJzybwUEoU6ZdFmwesBncUBUWgTERW0ZEyNrrypfSPBZm4ZarebTaTWb-AsOVYDX-GjTfMBHoHEtJiz-WmCkZ4Eey5D_3eSZ2Qlq0vXZv4BkIG6HhqeepblObNSzowYdRo69LJl-iE2SNpMAumFRZ_1Pwmi4Jx4QvBFej7B4uJMupCG3jIsXLm49FqbPN9nNqZmgDUTCxAYTKQ8PtWsBVqJy1Eqn2aMxtMNVg5XtUHTS4GN_ADSZqJRScgpuGg2fwlvwfiU0ejKZR-Zxvr8NVlNTQtbeMfeLUO-lmeOXtC9f4GaWrolFsYJ8kE9LQ_zVp-o4kPksw9I7ek5LTEtjuyc_7rzJRU_QLQGvZPk-0LobC94t3TtBziDnTJjfHYH3Hsfaa8FOUPboS7_0G00)
+![Value Proposition of the Product](http://www.plantuml.com/plantuml/png/TP9VYnen5CNVyobIAJX2XxuN4Mqhj511EhHFWiJaejdDdo7tHlJRR-uuhhhgIp39-NdEFPafaagKlHEVRD0k6v1ZbVJEUaNmTNR-DH5YE7VW8H2AHIIxLsHZM3UaNc4NdO5KsR07f9Y-oC5FHKessaBGi0g_-ul1w1cQG6qXK27dICLEpifM7rUXAkvR6y2CdiCSgdFzPvIsT9GB27Tk_vNBK1b4k8lNH9TP8-S7vLi7Zq2rmxOjvCm3obynemtRGYe7SfcivXMCrKmymhDkyIhW3zKYnL2yboc-W2RPv8stY2VyE_yz8AxBhScQAkKTdiqNVqhE5fBbiOjO3F-2wxnGd5z0rhNaKKNVA--x2KI1-dkE95Z46pQGtwIEWU10ejD-F0yacBavDY24Ws9XnFZpvRFnx_FNU7ceIK6ktcr5Jv0zLyRYhhjRsQQlfcvFrR2iRqcK5B8FCorBzkuD)
+
+*Figure _: Value Proposion of the Ames ML Experiment*
 
 # Success Metrics
 > What are the success metrics that indicate you’re achieving your internal goals for the project?
@@ -22,14 +24,10 @@ A value proposition of this project has three levels, let's call them context, c
 + **RMSLE**: performance of the model, also score in a Kaggle competition.
 + **Project Pass**: passing the capstone project in Udacity Machine Learning Engineer with Microsoft Azure Nanodegree Program.
 
-<!-- TBD Conciseness: Note key decisions, add relevant links, and don’t leave anything up for interpretation. -->
-
 # Messaging
 > What’s the product messaging marketing will use to describe this product to customers, both new and existing?
 
-**Check in data science, check out business needs.**
-
-**Data science meeting your requirements.**
+**Check in data science, check out business needs!**
 
 # Timeline/Release Planning
 > What’s the overall schedule you’re working towards?
@@ -37,9 +35,18 @@ A value proposition of this project has three levels, let's call them context, c
 # Personas
 > Who are the target personas for this product, and which is the key persona?
 
-+ A businessman investing in data science ventures
-+ An Ames Estate Agency
-+ A Udacity Mentor
+## A businessman investing in data science ventures
+Linda Dillman is a mid-age business-woman with a fresh start-up mindset. She is a humble, kind person who treats everyone with respect. She is generous with her time, money and gentle advise. Her smile is infectious, and her laugh will fill the room. She enjoy reading, spending time with family and friends. She travels a lot, both for business and pleasure, leaving behind a wide range of admirers in the form of friend, acquaintances and business associates all over the world.
+
+Linda is a chief information officer in a global retail company. She is trying to use information technology to improve efficiency of her business and unlock future organic growth potential. She knows, it is mainly about the extraction of useful information and knowledge from large volumes of date, in order to improve business decision-making. She is frustrated by the gap between quickly growing offerings of data science tools on the market and a shortage of talents necessary to take advantege of big data and data mining.
+
+## An Ames Estate Agency
+<!-- https://www.hunzikerrealty.com/ | https://jobbio.com/real-estate-webmasters | https://visionone.co.uk/brand-archetypes/the-creator-brand-archetype/ -->
+Ross Hunziker is an experienced real estate webmaster who loves new ideas and gets deep satisfaction from both the process and the outcome of creating web services.
+
+Ross has been building a website helping buy and sell homes in Ames and Central Iowa for a couple of years. His property search tool provides access to a database of real estate listings by type, price, neighborhood, school district, and even number of bedrooms and bath.
+
+## A Udacity Mentor
 
 # User Scenarios
 > These are full stories about how various personas will use the product in context.
@@ -47,7 +54,14 @@ A value proposition of this project has three levels, let's call them context, c
 # User Stories/Features/Requirements
 > These are the distinct, prioritized features along with a short explanation as to why this feature is important.
 
-![The Product and Key Deliverables](http://www.plantuml.com/plantuml/png/XLJVQzim47xtNw6LiIQZTjv7ANNNmGPR5zBjeM0mYdnrjCgIgX-5ZFtnkrESE6nsysATkE_xfFDzkciVk0knKzaRgOMA3R1BxiH6TZp0ejn7Lrbs_ab11phux2PwgS7xUkbC4qMOyKxv2tPMTk3Pjw_itgWOfD5dym7wqUZWE6AjQn3QCzaAdgDqEzrAtneHAMIpvUfsVap_llu5I0uEBB9_WDXeARX2lZKkN5IQBb-m1gmosoJHSHsvGetIMeLOkb1zomFlfRmmT95x4vq0XXkez6pvSC6-B1_kRkRJHBvf3iL-DdJ1jj8DvZq4PAMx6MNQRLsw81_xcbs775mNA-1D1qNNJ60Jy1I8u-48ewMmM_QkqXJMZu2xAKeCfbD4Ia4XxLQl9x2RhGs8n0MSvGwr0xYwqY5gZUM-oWsEIutaj1R2lqpXmDCPjFoFkiDsp5ePDd6jCKJSRbC8qorKz2Z-n1ULNZfef0XrITLJCm0zAGNu4RadthQAf7P1aXAeiI5QRXCjvyqBrmAQlD8EMWVUO_VpaFps7C4lgD4edfslG2Lh-8pSpzxdESFs3Xkowh0Zjmqxib1sZd1s-QSeMB97Xe8rzbt9tplB_RHxt-0o7qjJZeuPJIQBqBdZtDuEqu3aWUbqtsQgP3mFFXodI_oJhQQNITdZrgOYJu5E8wZUavXKz2aKLJw6sHiebVug03mAP0fQq4rs-NQOf-j-dkLsD_-ks0VMZy8gZ095FpS9sS_GAQYX-PI0-x79TYEh-eV1Xy6Mav-FcEMGOZJp3Wh7_71uMJbFpxddffZ0R09D_vUGz1wha85kMF-Jhl4JE_KN)
+
+![State Diagram](http://www.plantuml.com/plantuml/png/VPA_Rjum3CHtFGMHeKE13FMOeKYBZitKRd46sRgl5g0_gaW7i9--z6SfHP4cWmSTZxyx0xndiLNM6CpY7GYno4OEF5TVnETaT2wWcwyh-mJcCPMQfu0u9eUBIkw6BDDa7Zy-qUrdckYEpW790denSy7iBnjL_5vzHKGIxknlLYn3nbJnoxEWDgWpqu5qYfnM7zoOBBdJsrU_h98VlbFC3e6asfT2KJvrpmy4p0BNNBc8ZtxllZmO_UvesGfgiTL622gJh8fw0_5lq60StMfFZTIc5o_zdGTz7vmZeLc6PlbVVppRi5hfOBpwWpTyWz7eau-Z0i-vGhMMYU6l1lKzEiiBt5Dlo5Twp_gvW2QmZEaQDgPptCBAYL1iqSqvnsAlsE6Lrd0F9yIXXBmrI3Q5r9tLVUhl71ddyDpMTfEFjLtN12pquJYOagkO_T3r0CqzajDR_WC0)
+
+*Figure .: State Diagram of the Ames ML Experiment*
+
+![The Product and Key Deliverables](http://www.plantuml.com/plantuml/png/XPHlQzi-4CUV-rNeLtwioQYTvwEKfcjXWwqBsVQWO32AT7MqofAgFsKPU_6xKzmwR7Rp93fnd-zP5trrbo5o7rEdY_-K4Jf9OEVSYwtgU8J5yZcwA8hJ6mqTc1YAgnIKWH2QbRSoYJZZdGvdx6JPGM2VFx6Rdmwy8lPaFi3lhOcU8-syHBZNiZKy9kNtbMjpRKMYaCrMw-lveVpBvWUWE7fmgFu6OckKu1hrplfuLXiwViKaE6rtkKJ7JU8QQooTqyX6PKrppIFlImLXwI1VRV8266wWDhFLtHdxkBgxlPfF2_bMlhJxmT81szf8p0UWZlFPhBRjhbdwgExxdds76bmNQ-2oWwgJ4sm6Zq6y0pe3BPNRiJUreR2v1znDILAqdIPH3YhbTcOpmMvtBYA92tZ7FTQEu9lQn6GCjlkgDdgk38hpMedmDCL1e6_GyYzrQoNCMXMtQMCmH6w_gOJj5Ze5BFx05xLPUP1An6P9tTDb0BfI2GWZvHvussegjGzoAO4rjYGhNPQLN3vn8q2MjV7GUWX1MLF6xBV716515ut5YzCrw6oDK93_sTkoPCxBOKDM7NRajc575YfE4MVdlwkAPNiKMB1P0zVgrzvotrtl6yhFnzAKey-C9hD5wBlZsjuEqm1vO3hTNtFkP3mF8Hwcbo6erj3BfEpXrUOcZq772UhtA9ERFaPHvsFCiu5owwy24B10eQ458ulp_uU9kkddMUdsy--2lMFzAApZA2ZwkKbaFqEdK9ld4u7FOvFjHrRzbu8FWwqaFnyebqEAqSnxgN2eZoylg-JzSyxQ71FC9cZwVucazrZ70ena_PzqYJ-fqty0)
+
+*Figure _: Key Deliverables of the Ames ML Experiment*
 
 # Features Out
 > What have you explicitly decided not to do and why
@@ -70,3 +84,5 @@ A value proposition of this project has three levels, let's call them context, c
 + [ProductSchool: Product Requirements Document (PRD)](https://productschool.com/blog/product-management-2/product-template-requirements-document-prd/)
 + [JamaSoftware: How to Write an Effective Product Requirements Document](https://www.jamasoftware.com/blog/how-to-write-an-effective-product-requirements-document)
 + [EARS – The Easy Approach to Requirements Syntax](https://qracorp.com/easy-approach-to-requirements-syntax-ears-guide/)
+
+<!--  -->
