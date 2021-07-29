@@ -4,7 +4,7 @@
 
 # Change History
 > A PRD is a living document that should be continuously updated according to the product’s lifecycle.
-+ 2021-07-28 LS starts a new PRD.
++ 2021-07-28 LS starts writing a new PRD.
 
 # Overview
 > Briefly, what is this project about?  Why are you doing it?
@@ -67,5 +67,6 @@ A value proposition of this project has three levels, let's call them context, c
 # References
 + [Udacity: Machine Learning Engineer for Microsoft Azure Nanodegree Program](https://www.udacity.com/course/machine-learning-engineer-for-microsoft-azure-nanodegree--nd00333)
 + [Kaggle: House Prices - Advanced Regression Techniques](https://www.kaggle.com/c/house-prices-advanced-regression-techniques)
-+ [ProductSchool: Product Templates: Product Requirements Document (PRD)](https://productschool.com/blog/product-management-2/product-template-requirements-document-prd/)
++ [ProductSchool: Product Requirements Document (PRD)](https://productschool.com/blog/product-management-2/product-template-requirements-document-prd/)
 + [JamaSoftware: How to Write an Effective Product Requirements Document](https://www.jamasoftware.com/blog/how-to-write-an-effective-product-requirements-document)
++ [EARS – The Easy Approach to Requirements Syntax](https://qracorp.com/easy-approach-to-requirements-syntax-ears-guide/)
