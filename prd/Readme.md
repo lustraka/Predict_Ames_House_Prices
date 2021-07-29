@@ -10,11 +10,11 @@
 > Briefly, what is this project about?  Why are you doing it?
 
 A value proposition of this project has three levels, let's call them context, content, and code levels.
-+ A **context (strategy) level** offers an example of a data science solution to a business problem. It approaches data science solution as a business product that needs a clear and concise technical specification to address the business problem in a proper way.
-+ A **content (story line) level** introduces one canonical data mining task, namely regression or value estimation. This task attempts to estimate or predict for each house in Ames real estate dataset its sale price. The Ames Housing dataset hosted on Kaggle.com povides the content for data minining.
++ A **context (strategy) level** offers an example of a data science solution to a business problem. It approaches a machine learning solution as a business product or contract that needs a technical specification which is clear, concise, testable, traceable, and correct.
++ A **content (or story line) level** is about one of the canonical data mining tasks. The goal of the project on this level is to estimate or predict sale prices of houses in Ames with a regression model trained on historical data. The Ames Housing dataset is downloadable from Kaggle.com. It is located in House Prices Advanced Regression Techniques ongoing competition connected with one of Kaggle's tutorials.
 + A **code (procedural) level** serves the need of passing the capstone project assignment in Udacity Machine Learning Engineer in Azure Nanadegree Program. This level determines application and infrastructure components of the data science solution.
 
-![Product Overiview](http://www.plantuml.com/plantuml/png/RP5FIoin5CNNBv_YllAWVU0W26va65fhmMLnS5SejvdBD9e_8JSf5l6xcxHZgzXDc3CvF-Ptc2b7334PBVugAtNg26eCSgiCHhgUVJqrWb-LzHZGG20PqVQQwffZo9VzljgXJbJbI6YQ1jx5d-2IxUOkM0fmSoi-n7YXoP2DBEuJAqlCwsLmNP9nWbls_Wf6CqCCZwvSzolReYPO1YNBIPsIKJax-lyRxvWfqmyO4Lgfo4hAjDEf0B1uG-CrNGAJz9p1vmwbYdkOe-VeR8PpuIMlX3PjZ68-VdVclLOIOqxhbi8kYqqyReluu0Ud0OCuPqoCdqWVA1Q7eL1LK3XHl4-Xk9o2qDIJxKJzx_mlDeDzvO_s3Tp1C6GLBnQ3qtHeOOZxdnqyRwdukAKqlqs4uRN87Z3eJFEHZFu4)
+![Value Proposition of the Product](http://www.plantuml.com/plantuml/png/TP9F2nen4CNl-HIf55oXI-z5HDiABLIGBkr9a34PD6t-B3iJqM_VpBhMMlKIdEJzybwUEoU6ZdFmwesBncUBUWgTERW0ZEyNrrypfSPBZm4ZarebTaTWb-AsOVYDX-GjTfMBHoHEtJiz-WmCkZ4Eey5D_3eSZ2Qlq0vXZv4BkIG6HhqeepblObNSzowYdRo69LJl-iE2SNpMAumFRZ_1Pwmi4Jx4QvBFej7B4uJMupCG3jIsXLm49FqbPN9nNqZmgDUTCxAYTKQ8PtWsBVqJy1Eqn2aMxtMNVg5XtUHTS4GN_ADSZqJRScgpuGg2fwlvwfiU0ejKZR-Zxvr8NVlNTQtbeMfeLUO-lmeOXtC9f4GaWrolFsYJ8kE9LQ_zVp-o4kPksw9I7ek5LTEtjuyc_7rzJRU_QLQGvZPk-0LobC94t3TtBziDnTJjfHYH3Hsfaa8FOUPboS7_0G00)
 
 # Success Metrics
 > What are the success metrics that indicate you’re achieving your internal goals for the project?
@@ -47,6 +47,8 @@ A value proposition of this project has three levels, let's call them context, c
 # User Stories/Features/Requirements
 > These are the distinct, prioritized features along with a short explanation as to why this feature is important.
 
+![The Product and Key Deliverables](http://www.plantuml.com/plantuml/png/XPJVQzim4CVV_LTePQp9g9ttKKhJTR31reLqUoWOZ29T7QsofEf78MD__EuKjmwRtRn49-xpFUkYh-uoHEvZwdJnHXcXamHsphtOgev7M2oVeukYEFsaeGCJGt6LWZ8GGhFoLYOHPxpJuOoTB3i8xDjNTcjrYigQa_c0VhGcUewiynBHNidMy9YKtzUjpRKLYK8sMwslvuVoxvjVWEBemQ7w1uYjKO9hr3lhurbjwF0La-2qtUKI7JU9QwonT4uZImTghddaVQaWB1tarYOlWE46QZDRtPsnBwkxcwlvj91lvKkpdoqTiAsDn7o0YAfyDgjjkskMFghxlcVVeGRNnHguxA3gv0IRmMCGxu3EG4lbTknTRIXixW5tKv8KRQT9b8DAkPtPJB3RdOj8uWBUSO-r8_YcDZ4PW-s-gesUAuFYl5OYF4rn4EWRjFnFtLW9irR5RTeO397RRofXkuLE0Oi_y4LjLXwa4h5PKlTq6O2UL0B2IBa7thQQIks3N4fWZIt9IfTb9PTFt0YGPMqyj1v2KDQKCVljCK5Oq4LZyU9q3JfR8nJaVlQ-B1bUxx0XgmuxSjkm8miLfuYpypzLnR8z2YpOuBrhzNjlkP-kzmtbvsDfoj5dHfFP8lJTSMrlXsc0F32TxgyvTpAUXn0FqyiGL6lePLBsy6fpayUWumJrUvJ9JH-ZgFCnvjb0kVLN0GXOeD3GWf75-TjXdcxwULQw_VoxO1zOFmhhE0gAVcuIsS_GATJIVChWyzXa-v5L_wFWms0hoSy7okMGOZJpNYeSwkFBoofvViwzDiS4imdQM054qdkiOm56ilvFkiIVrEc_)
+
 # Features Out
 > What have you explicitly decided not to do and why
 
@@ -63,5 +65,7 @@ A value proposition of this project has three levels, let's call them context, c
 > This is a catch-all for anything else, such as if you make a key decision to remove or add to the project’s scope.
 
 # References
-+ [Product Templates: Product Requirements Document (PRD)](https://productschool.com/blog/product-management-2/product-template-requirements-document-prd/)
-+ [How to Write an Effective Product Requirements Document](https://www.jamasoftware.com/blog/how-to-write-an-effective-product-requirements-document)
++ [Udacity: Machine Learning Engineer for Microsoft Azure Nanodegree Program](https://www.udacity.com/course/machine-learning-engineer-for-microsoft-azure-nanodegree--nd00333)
++ [Kaggle: House Prices - Advanced Regression Techniques](https://www.kaggle.com/c/house-prices-advanced-regression-techniques)
++ [ProductSchool: Product Templates: Product Requirements Document (PRD)](https://productschool.com/blog/product-management-2/product-template-requirements-document-prd/)
++ [JamaSoftware: How to Write an Effective Product Requirements Document](https://www.jamasoftware.com/blog/how-to-write-an-effective-product-requirements-document)
