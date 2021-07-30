@@ -4,15 +4,15 @@
 
 # Change History
 > A PRD is a living document that should be continuously updated according to the product’s lifecycle.
-+ 2021-07-28 LS starts writing a new PRD.
++ 2021-07-28 LS starts writing product requirements for the Ames ML experiment.
 
 # Overview
 > Briefly, what is this project about?  Why are you doing it?
 
-A value proposition of this project has three levels, let's call them context, content, and code levels.
+A value proposition of the **Ames Machine Learning Experiment** has three levels, let's call them context, content, and code levels.
 + A **context (strategy) level** offers an example of a data science solution to a business problem. It approaches a machine learning solution as a business product or contract that needs a technical specification which is clear, concise, testable, traceable, and correct.
-+ A **content (or story line) level** is about one of the canonical data mining tasks. The goal of the project on this level is to estimate or predict sale prices of houses in Ames with a regression model trained on historical data. The Ames Housing dataset is downloadable from Kaggle.com. It is located in House Prices Advanced Regression Techniques ongoing competition connected with one of Kaggle's tutorials.
-+ A **code (procedural) level** serves the need of passing the capstone project assignment in Udacity Machine Learning Engineer in Azure Nanadegree Program. This level determines application and infrastructure components of the data science solution.
++ A **content (story line) level** is about one of the canonical data mining tasks. The goal of the project on this level is to estimate or predict sale prices of houses in Ames with a regression model trained on historical data. The Ames Housing dataset is downloadable from Kaggle.com. It is located in House Prices Advanced Regression Techniques ongoing competition connected with one of Kaggle's tutorials.
++ A **code (procedural) level** serves the need of passing the capstone project assignment in Udacity Machine Learning Engineer for Microsoft Azure Nanadegree Program. This level determines application and infrastructure components of the data science solution.
 
 ![Value Proposition of the Product](http://www.plantuml.com/plantuml/png/TP9VYnen5CNVyobIAJX2XxuN4Mqhj511EhHFWiJaejdDdo7tHlJRR-uuhhhgIp39-NdEFPafaagKlHEVRD0k6v1ZbVJEUaNmTNR-DH5YE7VW8H2AHIIxLsHZM3UaNc4NdO5KsR07f9Y-oC5FHKessaBGi0g_-ul1w1cQG6qXK27dICLEpifM7rUXAkvR6y2CdiCSgdFzPvIsT9GB27Tk_vNBK1b4k8lNH9TP8-S7vLi7Zq2rmxOjvCm3obynemtRGYe7SfcivXMCrKmymhDkyIhW3zKYnL2yboc-W2RPv8stY2VyE_yz8AxBhScQAkKTdiqNVqhE5fBbiOjO3F-2wxnGd5z0rhNaKKNVA--x2KI1-dkE95Z46pQGtwIEWU10ejD-F0yacBavDY24Ws9XnFZpvRFnx_FNU7ceIK6ktcr5Jv0zLyRYhhjRsQQlfcvFrR2iRqcK5B8FCorBzkuD)
 
@@ -38,7 +38,7 @@ A value proposition of this project has three levels, let's call them context, c
 ## A businessman investing in data science ventures
 Linda Dillman is a mid-age business-woman with a fresh start-up mindset. She is a humble, kind person who treats everyone with respect. She is generous with her time, money and gentle advise. Her smile is infectious, and her laugh will fill the room. She enjoy reading, spending time with family and friends. She travels a lot, both for business and pleasure, leaving behind a wide range of admirers in the form of friend, acquaintances and business associates all over the world.
 
-Linda is a chief information officer in a global retail company. She is trying to use information technology to improve efficiency of her business and unlock future organic growth potential. She knows, it is mainly about the extraction of useful information and knowledge from large volumes of date, in order to improve business decision-making. She is frustrated by the gap between quickly growing offerings of data science tools on the market and a shortage of talents necessary to take advantege of big data and data mining.
+Linda is a chief information officer in a global retail company. She is trying to use information technology to improve efficiency of her business and unlock future organic growth potential. She knows, it is mainly about the extraction of useful information and knowledge from large volumes of data, in order to improve business decision-making. She is frustrated by the gap between quickly growing offerings of data science tools on the market and a shortage of talents necessary to take advantege of big data and data mining.
 
 ## An Ames Estate Agency
 <!-- https://www.hunzikerrealty.com/ | https://jobbio.com/real-estate-webmasters | https://visionone.co.uk/brand-archetypes/the-creator-brand-archetype/ -->
@@ -84,5 +84,6 @@ Ross has been building a website helping buy and sell homes in Ames and Central 
 + [ProductSchool: Product Requirements Document (PRD)](https://productschool.com/blog/product-management-2/product-template-requirements-document-prd/)
 + [JamaSoftware: How to Write an Effective Product Requirements Document](https://www.jamasoftware.com/blog/how-to-write-an-effective-product-requirements-document)
 + [EARS – The Easy Approach to Requirements Syntax](https://qracorp.com/easy-approach-to-requirements-syntax-ears-guide/)
++ [Udacity: Capstone - Azure Machine Learning Engineer - Project Specification](https://review.udacity.com/#!/rubrics/2864/view)
 
 <!--  -->
