@@ -35,29 +35,51 @@ A value proposition of the **Ames Machine Learning Experiment** has three levels
 # Personas
 > Who are the target personas for this product, and which is the key persona?
 
-## A businessman investing in data science ventures
+# Businessman Investing in Data Science Ventures
 Linda Dillman is a mid-age business-woman with a fresh start-up mindset. She is a humble, kind person who treats everyone with respect. She is generous with her time, money and gentle advise. Her smile is infectious, and her laugh will fill the room. She enjoy reading, spending time with family and friends. She travels a lot, both for business and pleasure, leaving behind a wide range of admirers in the form of friend, acquaintances and business associates all over the world.
 
 Linda is a chief information officer in a global retail company. She is trying to use information technology to improve efficiency of her business and unlock future organic growth potential. She knows, it is mainly about the extraction of useful information and knowledge from large volumes of data, in order to improve business decision-making. She is frustrated by the gap between quickly growing offerings of data science tools on the market and a shortage of talents necessary to take advantege of big data and data mining.
 
-## An Ames Estate Agency
+## Machine Learning Engineer
 <!-- https://www.hunzikerrealty.com/ | https://jobbio.com/real-estate-webmasters | https://visionone.co.uk/brand-archetypes/the-creator-brand-archetype/ -->
 Ross Hunziker is an experienced real estate webmaster who loves new ideas and gets deep satisfaction from both the process and the outcome of creating web services.
 
 Ross has been building a website helping buy and sell homes in Ames and Central Iowa for a couple of years. His property search tool provides access to a database of real estate listings by type, price, neighborhood, school district, and even number of bedrooms and bath.
 
-## A Udacity Mentor
+## Udacity Reviewer
 
 # User Scenarios
 > These are full stories about how various personas will use the product in context.
 
+![ML Workflow](http://www.plantuml.com/plantuml/png/RSz1Zi8m30NGVKxXSsH6euxe0YHOqGkOnfI898uS5zJROq5XnIxvUlhwxfgYw9oJyqTAD2eW15HifB_Ext9bKT0BlKE8HHdkBDTMSQGVrsgAwlmW60ja3fHWRh5CxdzMpgWKuB1V6U1awXlUBfMabtYpHYe1rjODvuf2ApLoPibOHbE-fvfuUMuxKTENiNpuVC2QAjlWFzVPquvy0000)
+
+*Figure _: Ames ML Experiment Workflow*
+
 # User Stories/Features/Requirements
 > These are the distinct, prioritized features along with a short explanation as to why this feature is important.
 
+When an ML experiment is about to start, an ML engineer shall:
++ sign in to Azure workspace, 
++ open Azure ML Studio,
++ create a compute instance to run Jupyter notebooks,
++ upload source code (Jupyter notebooks and Python scripts) from the experiment's GitHub repository to the workspace.
 
-![State Diagram](http://www.plantuml.com/plantuml/png/VPA_Rjum3CHtFGMHeKE13FMOeKYBZitKRd46sRgl5g0_gaW7i9--z6SfHP4cWmSTZxyx0xndiLNM6CpY7GYno4OEF5TVnETaT2wWcwyh-mJcCPMQfu0u9eUBIkw6BDDa7Zy-qUrdckYEpW790denSy7iBnjL_5vzHKGIxknlLYn3nbJnoxEWDgWpqu5qYfnM7zoOBBdJsrU_h98VlbFC3e6asfT2KJvrpmy4p0BNNBc8ZtxllZmO_UvesGfgiTL622gJh8fw0_5lq60StMfFZTIc5o_zdGTz7vmZeLc6PlbVVppRi5hfOBpwWpTyWz7eau-Z0i-vGhMMYU6l1lKzEiiBt5Dlo5Twp_gvW2QmZEaQDgPptCBAYL1iqSqvnsAlsE6Lrd0F9yIXXBmrI3Q5r9tLVUhl71ddyDpMTfEFjLtN12pquJYOagkO_T3r0CqzajDR_WC0)
+While building a dataset, an Ames ML Experiment shall:
++ download Ames Housing dataset from Kaggle website,
++ upload train and test dataset to the workspace,
++ clean the dataset,
++ augment the dataset using feature engineering,
++ register the dataset into the workspace.
 
-*Figure .: State Diagram of the Ames ML Experiment*
+While training model using Automated ML, an Ames ML Experiment shall:
++
+
+While training model using HyperDrive, an Ames ML Experiment shall:
++
+
+While deploing the best model, an Ames ML Experiment shall:
++
+
 
 ![The Product and Key Deliverables](http://www.plantuml.com/plantuml/png/XPHlQzi-4CUV-rNeLtwioQYTvwEKfcjXWwqBsVQWO32AT7MqofAgFsKPU_6xKzmwR7Rp93fnd-zP5trrbo5o7rEdY_-K4Jf9OEVSYwtgU8J5yZcwA8hJ6mqTc1YAgnIKWH2QbRSoYJZZdGvdx6JPGM2VFx6Rdmwy8lPaFi3lhOcU8-syHBZNiZKy9kNtbMjpRKMYaCrMw-lveVpBvWUWE7fmgFu6OckKu1hrplfuLXiwViKaE6rtkKJ7JU8QQooTqyX6PKrppIFlImLXwI1VRV8266wWDhFLtHdxkBgxlPfF2_bMlhJxmT81szf8p0UWZlFPhBRjhbdwgExxdds76bmNQ-2oWwgJ4sm6Zq6y0pe3BPNRiJUreR2v1znDILAqdIPH3YhbTcOpmMvtBYA92tZ7FTQEu9lQn6GCjlkgDdgk38hpMedmDCL1e6_GyYzrQoNCMXMtQMCmH6w_gOJj5Ze5BFx05xLPUP1An6P9tTDb0BfI2GWZvHvussegjGzoAO4rjYGhNPQLN3vn8q2MjV7GUWX1MLF6xBV716515ut5YzCrw6oDK93_sTkoPCxBOKDM7NRajc575YfE4MVdlwkAPNiKMB1P0zVgrzvotrtl6yhFnzAKey-C9hD5wBlZsjuEqm1vO3hTNtFkP3mF8Hwcbo6erj3BfEpXrUOcZq772UhtA9ERFaPHvsFCiu5owwy24B10eQ458ulp_uU9kkddMUdsy--2lMFzAApZA2ZwkKbaFqEdK9ld4u7FOvFjHrRzbu8FWwqaFnyebqEAqSnxgN2eZoylg-JzSyxQ71FC9cZwVucazrZ70ena_PzqYJ-fqty0)
 
@@ -68,6 +90,10 @@ Ross has been building a website helping buy and sell homes in Ames and Central 
 
 # Designs
 > Include any needed early sketches, and throughout the project, link to the actual designs once they’re available.
+
+![State Diagram](http://www.plantuml.com/plantuml/png/VPA_Rjum3CHtFGMHeKE13FMOeKYBZitKRd46sRgl5g0_gaW7i9--z6SfHP4cWmSTZxyx0xndiLNM6CpY7GYno4OEF5TVnETaT2wWcwyh-mJcCPMQfu0u9eUBIkw6BDDa7Zy-qUrdckYEpW790denSy7iBnjL_5vzHKGIxknlLYn3nbJnoxEWDgWpqu5qYfnM7zoOBBdJsrU_h98VlbFC3e6asfT2KJvrpmy4p0BNNBc8ZtxllZmO_UvesGfgiTL622gJh8fw0_5lq60StMfFZTIc5o_zdGTz7vmZeLc6PlbVVppRi5hfOBpwWpTyWz7eau-Z0i-vGhMMYU6l1lKzEiiBt5Dlo5Twp_gvW2QmZEaQDgPptCBAYL1iqSqvnsAlsE6Lrd0F9yIXXBmrI3Q5r9tLVUhl71ddyDpMTfEFjLtN12pquJYOagkO_T3r0CqzajDR_WC0)
+
+*Figure _: State Diagram of the Ames ML Experiment*
 
 # Open Issues
 > What factors do you still need to figure out?
@@ -85,5 +111,10 @@ Ross has been building a website helping buy and sell homes in Ames and Central 
 + [JamaSoftware: How to Write an Effective Product Requirements Document](https://www.jamasoftware.com/blog/how-to-write-an-effective-product-requirements-document)
 + [EARS – The Easy Approach to Requirements Syntax](https://qracorp.com/easy-approach-to-requirements-syntax-ears-guide/)
 + [Udacity: Capstone - Azure Machine Learning Engineer - Project Specification](https://review.udacity.com/#!/rubrics/2864/view)
++ [MS Docs: What is automated machine learning (AutoML)?](https://docs.microsoft.com/en-us/azure/machine-learning/concept-automated-ml?view=azure-ml-py)
++ [MS Docs: Hyperparameter tuning a model with Azure Machine Learning](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-tune-hyperparameters?view=azure-ml-py)
++ [MS Docs: Consume an Azure Machine Learning model deployed as a web service](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-consume-web-service?view=azure-ml-py&tabs=python#call-the-service-python)
++ [MS GitHub: Training of Python scikit-learn models on Azure Example](https://github.com/microsoft/MLHyperparameterTuning)
++ 
 
 <!--  -->
