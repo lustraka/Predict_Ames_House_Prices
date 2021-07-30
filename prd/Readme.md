@@ -32,21 +32,27 @@ A value proposition of the **Ames Machine Learning Experiment** has three levels
 # Timeline/Release Planning
 > What’s the overall schedule you’re working towards?
 
+The deadline for the capstone project is Sep 3, 2021.
+
 # Personas
 > Who are the target personas for this product, and which is the key persona?
 
-# Businessman Investing in Data Science Ventures
+## Businessman Investing in Data Science Ventures
 Linda Dillman is a mid-age business-woman with a fresh start-up mindset. She is a humble, kind person who treats everyone with respect. She is generous with her time, money and gentle advise. Her smile is infectious, and her laugh will fill the room. She enjoy reading, spending time with family and friends. She travels a lot, both for business and pleasure, leaving behind a wide range of admirers in the form of friend, acquaintances and business associates all over the world.
 
 Linda is a chief information officer in a global retail company. She is trying to use information technology to improve efficiency of her business and unlock future organic growth potential. She knows, it is mainly about the extraction of useful information and knowledge from large volumes of data, in order to improve business decision-making. She is frustrated by the gap between quickly growing offerings of data science tools on the market and a shortage of talents necessary to take advantege of big data and data mining.
 
 ## Machine Learning Engineer
 <!-- https://www.hunzikerrealty.com/ | https://jobbio.com/real-estate-webmasters | https://visionone.co.uk/brand-archetypes/the-creator-brand-archetype/ -->
-Ross Hunziker is an experienced real estate webmaster who loves new ideas and gets deep satisfaction from both the process and the outcome of creating web services.
+Ross Hunziker is an experienced real estate webmaster who loves new ideas and gets deep satisfaction from both the process and the outcome of creating web services. He always tries to leave his comfort zone behind and make decisions that looks odd. He is good at coming up with lots of ways to solve problems. He is motivated to aquire new levels of knowledge, or deepen his existing knowledge or skills in a significant way.
 
-Ross has been building a website helping buy and sell homes in Ames and Central Iowa for a couple of years. His property search tool provides access to a database of real estate listings by type, price, neighborhood, school district, and even number of bedrooms and bath.
+Ross has been building a website helping buy and sell homes in Ames and Central Iowa for a couple of years. His property search tool provides access to a database of real estate listings by type, price, neighborhood, school district, and even number of bedrooms and bath. Now he wants to deploy a home value calculator which will provide an instant estimate of a property's value for those users who are considering buying or purchasing a house or refinancing their existing property.
 
-## Udacity Reviewer
+## Udacity Mentor
+
+Elisa Romondia is in the Forbes list "60 Women-Led Startups That Are Shaking Up Tech Across The Globe". In her words, "The most rewarding aspect of being a Udacity Mentor for me is to mentor students from across the world, being part of an inclusive community of highly specialized mentors always ready to share and support."
+
+Elisa provides personalized feedback and responses to support students to learn and grow. Her feedback is also accurate, as she refers back to classroom content or items in a knowledge base. Her reviews are written in accesible language and contain useful resources where relevant. She reviews each rubric item, check previous reviews, and read student notes to thoroughly address every aspect of a submission.
 
 # User Scenarios
 > These are full stories about how various personas will use the product in context.
