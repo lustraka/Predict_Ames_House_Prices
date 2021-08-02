@@ -89,7 +89,7 @@ While training model using Automated ML, an Ames ML Experiment shall:
 + get the best run and fitted model;
 + save metrics, details, and outputs.
 
-![Run Automated ML Experiment](http://www.plantuml.com/plantuml/png/PP31QiCm44Jl-eezzMOAxSqs9Y65NjfJls1ZZUq5IpBIgZIGZw_ic9AIwypiczqz9EMesSscVgdfZPKJbDXRweDRieAAFnOfWktbQkhJ5482CNbse254mi-2A0vUJVlaO8MhPUPBrqftT4ZL578IhzKnQ_ZyQ9-bQqpz1QM58pieOjeuD_yK_21ZMnBvx4HtzQwaMNT0Fr7CdYoKPKv5UuUIJg0pagxMTiCWgh3aWiNScBJCeWNCtw3I6wLFMsg7c33y8tIt0UAHnUzZgn-obiVynUyxEeF2stjUkNxSdcpmk9f3oPMd_m80)
+![Run Automated ML Experiment](http://www.plantuml.com/plantuml/png/POx1QiCm38RlVWgTTYk3xPQ6qDB1BjjfJw3MIYAmBMFBOuK-_BGaZ8vT___Nz-bG5Oks65ptrC4BAbPImEJX8Z4t9R1-igWG-klDTQTPf18W98m4enIWhqo58oLr_KCapxZB0Qz3pyCnKjtDqYgdQNTiAkzl_ICFUzTz639ZCOPIgGjdxK-IHfvwMxHpPDtIEyd-vmUwp51Q0a-A7AfbhmRKcU1CLPSAauUHLSb354zXxseEh0R6JmBp5hxKPRL1d8n_2CDw03WXf_LiwQLfRlexltSCZeotUPwn-_yzU4bqSmVRjHY-0G00)
 
 *Figure _: Run Automated ML Experiment*
 
