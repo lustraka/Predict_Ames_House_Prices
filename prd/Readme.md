@@ -74,7 +74,7 @@ While building a dataset, an Ames ML Experiment shall:
 + download Ames Housing dataset from Kaggle website,
 + upload train and test dataset to the workspace,
 + clean the dataset,
-+ augment the dataset using feature engineering,
++ augment the dataset using feature engineering (where feature engineering is included),
 + register the dataset into the workspace.
 
 While training model using Automated ML, an Ames ML Experiment shall:
