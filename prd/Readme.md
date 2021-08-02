@@ -68,7 +68,9 @@ When an ML experiment is about to start, an ML engineer shall:
 + sign in to Azure workspace, 
 + open Azure ML Studio,
 + create a compute instance to run Jupyter notebooks,
-+ upload source code (Jupyter notebooks and Python scripts) from the experiment's GitHub repository to the workspace.
++ upload source code (Jupyter notebooks and Python scripts) from the experiment's GitHub repository to the workspace,
++ load a workspace,
++ create a compute cluster.
 
 While building a dataset, an Ames ML Experiment shall:
 + download Ames Housing dataset from Kaggle website,
@@ -77,8 +79,19 @@ While building a dataset, an Ames ML Experiment shall:
 + augment the dataset using feature engineering (where feature engineering is included),
 + register the dataset into the workspace.
 
+![Prepare Infrastructure and Dataset](http://www.plantuml.com/plantuml/png/VP91RzGm58Jl-HLFFQ3i8KLmT5TBKVS4d12SLmzxahNgsC7lcHA97qySWjYkKA_9QDutCxuNvQnb38rvO-X3cMP5ffWKtr9wf0nsyw_6V4hiYEafvKUPsEAkyJsrnmIXcxq_sAbqDXHHvFrhVxWX_FIYxtQaPqHgOzerHEOXZLDHVE4yG6zj1YlQ-cTnsByQuJntK-3vqkwkGH1GEqDMZwy2yhfyZSxtpo7UZv3kd8huE7IEbGMwaLIePpJcc9vYgA6gaFgSHlh8mn3GNC28fkbG7T5DsTl5djqFZXQkonWoH7oAdSAUe_zU8FiLw64DHZrOowAvRe57o6qzVQgdJpQ0OxkxpbbLfnuNGcKVKePRj5jwync3hoNHbfOq_PkekMhrl_qSNgpNl3LqtAmvEh9_1YHT5_pxEEuNSHd3Rm00)
+
+*Figure _: Prepare Infrastructure and Dataset*
+
 While training model using Automated ML, an Ames ML Experiment shall:
-+
++ set parameters for AutoMLConfig,
++ submit AutoML experiment,
++ get the best run and fitted model;
++ save metrics, details, and outputs.
+
+![Run Automated ML Experiment](http://www.plantuml.com/plantuml/png/PP31QiCm44Jl-eezzMOAxSqs9Y65NjfJls1ZZUq5IpBIgZIGZw_ic9AIwypiczqz9EMesSscVgdfZPKJbDXRweDRieAAFnOfWktbQkhJ5482CNbse254mi-2A0vUJVlaO8MhPUPBrqftT4ZL578IhzKnQ_ZyQ9-bQqpz1QM58pieOjeuD_yK_21ZMnBvx4HtzQwaMNT0Fr7CdYoKPKv5UuUIJg0pagxMTiCWgh3aWiNScBJCeWNCtw3I6wLFMsg7c33y8tIt0UAHnUzZgn-obiVynUyxEeF2stjUkNxSdcpmk9f3oPMd_m80)
+
+*Figure _: Run Automated ML Experiment*
 
 While training model using HyperDrive, an Ames ML Experiment shall:
 +
