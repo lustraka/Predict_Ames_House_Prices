@@ -36,7 +36,7 @@ The HyperDrive experiment uses XGBoost regressor which has been the best perform
 + `gamma` specifies the minimum loss reduction required to make a further partition on a leaf node of the tree; the larger `gamma` is, the more conservative the algorithm will be; its range is [0,∞] and for search is used interval [0,9]
 + `max_depth` is maximum depth of a tree, increasing this value will make the model more complex and more likely to overfit; its range is [0,∞] and for search are used values 3, 5, and 7.
 
-These are Tree Booster parameters. Other parameters are left with their default values except a learning parameter `objective` which takes value `reg:squaredlogerror`.
+These are Tree Booster parameters. Other parameters are left with their default values except a learning parameter `objective` which takes value `reg:squarederror`.
 
 ### Results
 > *TODO*: What are the results you got with your model? What were the parameters of the model? How could you have improved it?
