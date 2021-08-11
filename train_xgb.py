@@ -185,40 +185,44 @@ def load_data_clean():
 
     return train, test
 
-train, _ = load_data_clean()
+def main():
+    train, _ = load_data_clean()
 
-X_train, X_test = train_test_split(label_encode(train))
-y_train = X_train.pop('SalePrice')
-y_test = X_test.pop('SalePrice')
+    X_train, X_test = train_test_split(label_encode(train))
+    y_train = X_train.pop('SalePrice')
+    y_test = X_test.pop('SalePrice')
 
-print(f"X_train.shape = {X_train.shape}, X_test.shape = {X_test.shape}")
+    print(f"X_train.shape = {X_train.shape}, X_test.shape = {X_test.shape}")
 
-run = Run.get_context()
+    run = Run.get_context()
 
-parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser()
 
-parser.add_argument('--learning_rate', type=float, default=0.1,
-                   help='Step size shrinkage used in update to prevent overfiffing')
+    parser.add_argument('--learning_rate', type=float, default=0.1,
+                    help='Step size shrinkage used in update to prevent overfiffing')
 
-parser.add_argument('--gamma', type=float, default=2,
-                   help='Minimum loss reduction required to make a further partition on a leaf node of the tree')
+    parser.add_argument('--gamma', type=float, default=2,
+                    help='Minimum loss reduction required to make a further partition on a leaf node of the tree')
 
-parser.add_argument('--max_depth', type=int, default=3,
-                   help='Maximum depth of a tree')
+    parser.add_argument('--max_depth', type=int, default=3,
+                    help='Maximum depth of a tree')
 
-args = parser.parse_args()
-run.log('Learning rate', np.float(args.learning_rate))
-run.log('Gamma', np.float(args.gamma))
-run.log('Maximum depth', np.float(args.max_depth))
+    args = parser.parse_args()
+    run.log('Learning rate', np.float(args.learning_rate))
+    run.log('Gamma', np.float(args.gamma))
+    run.log('Maximum depth', np.float(args.max_depth))
 
-model = XGBRegressor(learning_rate=args.learning_rate, gamma=args.gamma, max_depth=args.max_depth, objective='reg:squarederror')
-model.fit(X_train, y_train)
+    model = XGBRegressor(learning_rate=args.learning_rate, gamma=args.gamma, max_depth=args.max_depth, objective='reg:squarederror')
+    model.fit(X_train, y_train)
 
-y_pred = model.predict(X_test)
-r2 = r2_score(y_test, y_pred)
+    y_pred = model.predict(X_test)
+    r2 = r2_score(y_test, y_pred)
 
-run.log("r2_score", np.float(r2))
-print(f'Writting r2 score = {r2} into a log.')
+    run.log("r2_score", np.float(r2))
+    print(f'Writting r2 score = {r2} into a log.')
 
-os.makedirs('./outputs', exist_ok=True)
-joblib.dump(model, './outputs/model.joblib')
+    os.makedirs('./outputs', exist_ok=True)
+    joblib.dump(model, './outputs/model.joblib')
+
+if __name__ == '__main__':
+    main()
