@@ -15,29 +15,41 @@ from xgboost import XGBRegressor
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import r2_score
 
-def load_data_raw():
+def load_data_raw(source='local'):
     """Load train and test data from Kaggle.com."""
-
-    # Download the Ames Housing Dataset
-    # Set the enviroment variables
     import os
-    import zipfile
-    os.environ['KAGGLE_USERNAME'] = "lubomrstraka"
-    os.environ['KAGGLE_KEY'] = "c7347462ef834e6645ce238c2f2fa561"
-    
-    # Import dependencies
-    os.system("pip install kaggle --upgrade --quiet")
 
-    # Download datasets
-    os.system("kaggle competitions download -c house-prices-advanced-regression-techniques --quiet")
-    
-    # Extract data
-    with zipfile.ZipFile('house-prices-advanced-regression-techniques.zip', 'r') as archive:
-        archive.extractall()
+    if source == 'kaggle':
+        # Download the Ames Housing Dataset
+        # Set the enviroment variables
+        import zipfile
+        os.environ['KAGGLE_USERNAME'] = "lubomrstraka"
+        os.environ['KAGGLE_KEY'] = "c7347462ef834e6645ce238c2f2fa561"
+        
+        # Import dependencies
+        os.system("pip install kaggle --upgrade --quiet")
 
-    # Read Train & Test Baseline Data
-    train_bl = pd.read_csv('train.csv', index_col='Id')
-    test_bl = pd.read_csv('test.csv', index_col='Id')
+        # Download datasets
+        os.system("kaggle competitions download -c house-prices-advanced-regression-techniques --quiet")
+        
+        # Extract data
+        with zipfile.ZipFile('house-prices-advanced-regression-techniques.zip', 'r') as archive:
+            archive.extractall()
+
+        # Read Train & Test Baseline Data
+        train_bl = pd.read_csv('train.csv', index_col='Id')
+        test_bl = pd.read_csv('test.csv', index_col='Id')
+    
+    # Using local data prevents "Too many requests" response from Kaggle
+    elif source == 'local': 
+        train_bl = pd.read_csv('data/train.csv', index_col='Id')
+        test_bl = pd.read_csv('data/test.csv', index_col='Id')
+    
+    else:
+        print('Missing data!')
+        train_bl = pd.DataFrame()
+        test_bl = pd.DataFrame()
+
 
     return train_bl, test_bl
 
