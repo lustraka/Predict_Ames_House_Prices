@@ -89,14 +89,23 @@ While training model using Automated ML, an Ames ML Experiment shall:
 + get the best run and fitted model;
 + save metrics, details, and outputs.
 
-![Run Automated ML Experiment](http://www.plantuml.com/plantuml/png/POx1QiCm38RlVWgTTYk3xPQ6qDB1BjjfJw3MIYAmBMFBOuK-_BGaZ8vT___Nz-bG5Oks65ptrC4BAbPImEJX8Z4t9R1-igWG-klDTQTPf18W98m4enIWhqo58oLr_KCapxZB0Qz3pyCnKjtDqYgdQNTiAkzl_ICFUzTz639ZCOPIgGjdxK-IHfvwMxHpPDtIEyd-vmUwp51Q0a-A7AfbhmRKcU1CLPSAauUHLSb354zXxseEh0R6JmBp5hxKPRL1d8n_2CDw03WXf_LiwQLfRlexltSCZeotUPwn-_yzU4bqSmVRjHY-0G00)
+![Run Automated ML Experiment](http://www.plantuml.com/plantuml/png/PO_FJiCm3CRlUGgVk4r8SEkgQjEGkC299_0MjxL8uYXn49Fsy7XTXOQuVdz-dxshYaLR3Avxwk055IifOF9mafYR4fW_cLG8_VdYkiCiKWaG4aQ2KGhGTwR2aPAw_Y6IPzpaWEUXvs4VgMvcQPNJjDatbVUt_f67hUi-39cn64Efr8Lpym-IHfvwIxHZP5tLkn4h7sOwVK9f2JmfSgYclHfGPu8ZLRrQomyZgvA7A9x2rjKSM0sCNmIsM_XKbzGASJB-8Got0k24dDRQrPUckUbl_7vZS6IyTUSPk__NWvT45xUpN8lX1m00)
 
 *Figure _: Run Automated ML Experiment*
 
 While training model using HyperDrive, an Ames ML Experiment shall:
-+
++ select an ML model and develop a training script,
++ configure the training job incl. an Azure ML environment,
++ specify the parameter sampler,
++ set the parameters for HyperDriveConfig,
++ Submit HyperDrive experiment,
++ save metrics, details, and outputs.
 
-While deploing the best model, an Ames ML Experiment shall:
+![Run HyperDrive Experiment](http://www.plantuml.com/plantuml/png/RP7FZjGm3CRlUGgVk0r8SEkCgbqn4XpW0a_WjcvhIEB8SKOKxSEJT2kOaRZsz_tnrpnbGxKIlElUTt15mqm662SO9QHY19KlPA24q_RYkYlTo4i215Fao761F2edExieLQwyhEQ-KQ0ma8A9ms8hHUCHAqugYTHlZcf5CxZkuogI2H0Y1e9P5EXNrN2e9dTv4sXYF2MFMt_X_ZbGFgrISYq-hPDUtd5_hXaIPrwA4jIkVvVzaC5n7FrRm0ZFlnl_-WKetbWbjlng_Pvev7dRZGaL0nafP0p9apPEziZoVkFdBP5UbM_qsjsKPGXiT-HkoBdjfF4dQ8amaI7xNBzzEi87ojRG_kTdDgC9WapapoudprR3iURLVkKnxweZnCdyaD2_6W0Nv7ZO6fTYgTXV-Nr7lp_6qVDXwFw_02Q9zEAUghO4_mS0)
+
+*Figure _: Run HyperDrive Experiment*
+
+While deploying the best model, an Ames ML Experiment shall:
 +
 
 
