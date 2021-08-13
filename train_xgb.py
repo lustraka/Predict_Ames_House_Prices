@@ -6,7 +6,7 @@ import os
 import numpy as np
 import pandas as pd
 from pandas.api.types import CategoricalDtype # ordered categorical data type, see encode()
-import joblib
+import pickle
 
 from azureml.core.run import Run
 from azureml.core import Workspace
@@ -222,7 +222,8 @@ def main():
     print(f'Writting r2 score = {r2} into a log.')
 
     os.makedirs('./outputs', exist_ok=True)
-    joblib.dump(model, './outputs/model.joblib')
+    with open('outputs/model.pkl', 'wb') as file:
+        pickle.dump(model, file)
 
 if __name__ == '__main__':
     main()
