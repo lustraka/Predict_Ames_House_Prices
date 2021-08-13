@@ -11,7 +11,10 @@ import pickle
 from azureml.core.run import Run
 from azureml.core import Workspace
 
-from xgboost import XGBRegressor
+from xgboost import XGBRegressor 
+# (1) "AssertError:read can not have position excceed buffer length" when loading saved model
+# (2) "ResolvePackageNotFound: - xgboost[version='<=0.90']" when building an image to prevent (1)
+# from azureml.automl.runtime.shared.model_wrappers import XGBoostRegressor
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import r2_score
 
@@ -213,6 +216,7 @@ def main():
     run.log('Maximum depth', np.float(args.max_depth))
 
     model = XGBRegressor(learning_rate=args.learning_rate, gamma=args.gamma, max_depth=args.max_depth, objective='reg:squarederror')
+    # model = XGBoostRegressor(learning_rate=args.learning_rate, gamma=args.gamma, max_depth=args.max_depth, objective='reg:squarederror')
     model.fit(X_train, y_train)
 
     y_pred = model.predict(X_test)
