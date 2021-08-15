@@ -43,10 +43,11 @@ def load_data_raw(source='local'):
         train_bl = pd.read_csv('train.csv', index_col='Id')
         test_bl = pd.read_csv('test.csv', index_col='Id')
     
-    # Using local data prevents "Too many requests" response from Kaggle
+    # Using local data used while registering dataset
+    # prevents "Too many requests" response from Kaggle
     elif source == 'local': 
-        train_bl = pd.read_csv('data/train.csv', index_col='Id')
-        test_bl = pd.read_csv('data/test.csv', index_col='Id')
+        train_bl = pd.read_csv('train.csv', index_col='Id')
+        test_bl = pd.read_csv('test.csv', index_col='Id')
     
     else:
         print('Missing data!')
@@ -171,10 +172,10 @@ def label_encode(df):
         X[colname] = X[colname].cat.codes
     return X
 
-def load_data_clean():
+def load_data_clean(source='local'):
     """Load and data and pre-process them."""
 
-    train_bl, test_bl = load_data_raw()
+    train_bl, test_bl = load_data_raw(source)
 
     train = train_bl.copy()
     train = encode_dtypes(train)
