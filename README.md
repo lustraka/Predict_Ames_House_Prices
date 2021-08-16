@@ -32,7 +32,7 @@ This is a final project of the Udacity Machine Learning Engineer with Microsoft 
 > *TODO*: What kind of model did you choose for this experiment and why? Give an overview of the types of parameters and their ranges used for the hyperparameter search
 
 The HyperDrive experiment uses XGBoost regressor which has been the best performing model from the voting ensemble crafted by the AutoML experiment. Hyperparameters tuned are:
-+ `learing_rate` alias `eta` is the step size shrinkage used in update to prevent overfiffing, its range is [0,1] and for search are use values 0.01, 0.1, 0.2,
++ `learing_rate` alias `eta` is the step size shrinkage used in update to prevent overfiffing, its range is [0,1] and for search are used values in interval [0.01, 0.2] with log scale,
 + `gamma` specifies the minimum loss reduction required to make a further partition on a leaf node of the tree; the larger `gamma` is, the more conservative the algorithm will be; its range is [0,∞] and for search is used interval [0,9]
 + `max_depth` is maximum depth of a tree, increasing this value will make the model more complex and more likely to overfit; its range is [0,∞] and for search are used values 3, 5, and 7.
 
