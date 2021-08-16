@@ -4,6 +4,11 @@
 - [ ] xgb.ipynb: Provide details of the best model (and document the parameters of that model)
 - [ ] xgb: Emphasize the effects of the different hyperparemeters on the primary metric of your model
 - [ ] Readme: Provide short overview of how to improve the project in the future
+  - [ ] Use feature engineering
+  - [ ] Enable neural networks and deep learning
+  - [ ] Use pipelines
+  - [ ] Use Bayesian sampling for more profound hyperparameter sampling
+  - [ ] Learn how to retrain and re-deploy the model
 - [ ] Take screenshots: 
   - RunDetails, performance of different models and the best models (aml + hdr | sdk + gui), 
   - the model endpoint is active (sdk + gui), 
