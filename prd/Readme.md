@@ -74,12 +74,12 @@ When an ML experiment is about to start, an ML engineer shall:
 
 While building a dataset, an Ames ML Experiment shall:
 + download Ames Housing dataset from Kaggle website,
-+ upload train and test dataset to the workspace,
++ upload the train dataset,
 + clean the dataset,
 + augment the dataset using feature engineering (where feature engineering is included),
 + register the dataset into the workspace.
 
-![Prepare Infrastructure and Dataset](http://www.plantuml.com/plantuml/png/VP91RzGm58Jl-HLFFQ3i8KLmT5TBKVS4d12SLmzxahNgsC7lcHA97qySWjYkKA_9QDutCxuNvQnb38rvO-X3cMP5ffWKtr9wf0nsyw_6V4hiYEafvKUPsEAkyJsrnmIXcxq_sAbqDXHHvFrhVxWX_FIYxtQaPqHgOzerHEOXZLDHVE4yG6zj1YlQ-cTnsByQuJntK-3vqkwkGH1GEqDMZwy2yhfyZSxtpo7UZv3kd8huE7IEbGMwaLIePpJcc9vYgA6gaFgSHlh8mn3GNC28fkbG7T5DsTl5djqFZXQkonWoH7oAdSAUe_zU8FiLw64DHZrOowAvRe57o6qzVQgdJpQ0OxkxpbbLfnuNGcKVKePRj5jwync3hoNHbfOq_PkekMhrl_qSNgpNl3LqtAmvEh9_1YHT5_pxEEuNSHd3Rm00)
+![Prepare Infrastructure and Dataset](http://www.plantuml.com/plantuml/png/VL9DRnCn4BtlhnZrW3Q7BOAZ6uLMpGau8JX7KtjsOzNs6C-uRIH-F7P8HHCXZfuPlO_tV2kAHMiCW_bWu7FD1wK2YPKUc1-X4Bh3hy5yPNI0yCpbKJ9QkXdy3EEMIU1gxJSsryc6Aafb_Tvlhe1UlEYd5UYU4eo9LmE0kUUOgz9tB0lfjIs4IcFVD8JrkqZEuvG37jx2tGmKX60ya1mnVhI7rpPDpi_d8kuYoRJdAZujaqD58JqfwQBEr9WjFwVGJVL3c0j7-8BB4cXu8qQKywOZqfIBjoGJkYTCbjnKQ2aauZbDIdQV_CzAiZuAkZyQWvbGQxkvJ44B-hHxMHwkE_-ky-zi84pZwjBiNGBEsZXWvW8-vi9FpHmCcKgRn2u5VDlMplGQYlb6YvTUuoa4KFxRt70PzhzYs_mtTVFHmFO4ZSc1_TChwB7Orpzpsuvh3By1)
 
 *Figure _: Prepare Infrastructure and Dataset*
 
@@ -106,10 +106,24 @@ While training model using HyperDrive, an Ames ML Experiment shall:
 *Figure _: Run HyperDrive Experiment*
 
 While deploying the best model, an Ames ML Experiment shall:
-+
++ register the best model,
++ prepare an entry script,
++ prepare an inference configuration,
++ choose a compute target,
++ deploy the model,
++ upload the test dataset,
++ test the resulting web service.
 
+![Deploy the Best Model](http://www.plantuml.com/plantuml/png/VP1FYzKm5CNt-HHt9U-znIpKLGTqHWPqeI0ECYu4oMjEsoljJRn9gfNvy2ODuuY2gz2Jt_cJNiLaDULbDZ7Cd4ptp7PqdPD_zvRm8q1vWIHoNd3V4BAZPIdWkQCtMo5kb5Vy2qCSjKmUw70tSJ_HuXrcccpyB1EF4vHE9ttw9VPUSJgzF5AQ87He_KVJVS38CK6hJarj6PUc-nYnoxqNPmcoidgf_SRMvXB9CfQJGw8H0hK9pfotXnpDScamHz3XyHb_TxR11roC5_JfzIllOohtYXYz7irtJXFva7ZXdt0qrPXWrIue_bWslbUKx__jBATkPQNMcODlhIcBm3sy5E9uCAQxHQ8STi0Xp7wh8VI4M0OefDyh1XwpsiHUQl_DpbNBusyhYdMj1Z6Hiyb6r9pGnkxAxocARxbWnNZjlkR2jwSux4GfZ7bX6NSPue9dgV0jnFtfB_5OxPmJceeOYXKlJFUyepkSAK9NxkkDTTkzkIh-lCo_0000)
 
-![The Product and Key Deliverables](http://www.plantuml.com/plantuml/png/XPHlQzi-4CUV-rNeLtwioQYTvwEKfcjXWwqBsVQWO32AT7MqofAgFsKPU_6xKzmwR7Rp93fnd-zP5trrbo5o7rEdY_-K4Jf9OEVSYwtgU8J5yZcwA8hJ6mqTc1YAgnIKWH2QbRSoYJZZdGvdx6JPGM2VFx6Rdmwy8lPaFi3lhOcU8-syHBZNiZKy9kNtbMjpRKMYaCrMw-lveVpBvWUWE7fmgFu6OckKu1hrplfuLXiwViKaE6rtkKJ7JU8QQooTqyX6PKrppIFlImLXwI1VRV8266wWDhFLtHdxkBgxlPfF2_bMlhJxmT81szf8p0UWZlFPhBRjhbdwgExxdds76bmNQ-2oWwgJ4sm6Zq6y0pe3BPNRiJUreR2v1znDILAqdIPH3YhbTcOpmMvtBYA92tZ7FTQEu9lQn6GCjlkgDdgk38hpMedmDCL1e6_GyYzrQoNCMXMtQMCmH6w_gOJj5Ze5BFx05xLPUP1An6P9tTDb0BfI2GWZvHvussegjGzoAO4rjYGhNPQLN3vn8q2MjV7GUWX1MLF6xBV716515ut5YzCrw6oDK93_sTkoPCxBOKDM7NRajc575YfE4MVdlwkAPNiKMB1P0zVgrzvotrtl6yhFnzAKey-C9hD5wBlZsjuEqm1vO3hTNtFkP3mF8Hwcbo6erj3BfEpXrUOcZq772UhtA9ERFaPHvsFCiu5owwy24B10eQ458ulp_uU9kkddMUdsy--2lMFzAApZA2ZwkKbaFqEdK9ld4u7FOvFjHrRzbu8FWwqaFnyebqEAqSnxgN2eZoylg-JzSyxQ71FC9cZwVucazrZ70ena_PzqYJ-fqty0)
+*Figure _: Deploy the Best Model*
+
+While cleaning up resources, an Ames ML Exeriment shall:
++ delete the service (endpoint),
++ delete the compute cluster,
++ delete the compute instance.
+
+![The Product and Key Deliverables](http://www.plantuml.com/plantuml/png/XPJBRjiw48RtUWgUuA2nYqZU5q4GfmdG0crgkEqYW0219gSo6ruONeAuwCENGycMqKhnnY8ztp-Q4N_EjG_KXQXayP_GJ4OEv98wjXMA1bWizwkheZY_aw101r_SH2yqUD-idE6HXHbLqb-GiwK2Jpv_8dSl5fn0zcm-mE-D3eucsZgUu5vBrl0KXUior_hMi8XBCbkjR-V7yY-Rdv34mO5Dwc_0jbemAfFU6XSkQetbLuI3bMQNKoYg8vKfnz9QcTWWZ6vkQQ1zAiyC5lBLHCU0f0tKUhPwk20VLm_tD_Df8TtoGxiV31ROrfgdk0ViEDTcf6btpT85yQFlsQcaIS_56YXNK2a-mMRm54GLO0t1KQ6RbtPJsHrvKslGmUqQpvom8Vqr9Ox1A9datQ8ITgSt4-nsPqCYqmESfOug2E2QMeUeTMhyLMskRbzbnVpp50SUtu6FVwbxms7MYh2D6vsMYUis5JDg8QDFoH_fejOh1romqE2nD7WiaFmf6FYHT8-qRIMcwXOv5KivjYWhRPQLb3zJpO2NjNRGEl1U65s6xBod27w1HvwI5-ThaDaali2RGDwM9R6E3niqxR13tmqxD5Dndd1o-RkgI3PAaH8soG5I_EhCzzts3iBuV2oCCNpDQ32R1TyxhktjC0sW1wR3-sF6JiRZuCDnUEczQ3NUKOmU7srkyXHqci1-JpAvwLCKTZx6x0sKMtyL09yI519QqBou_7-OhPj-ifMscuHNv1tfXs8THa7MJr0a-sawXPeygH3S3r3I3Q_wBmKTHbo9VZvIBeSGmUbto72i3uURLT9ydNjjNYDC9cZylaZYVQn30PgJ_YDTfv-ev1y0)
 
 *Figure _: Key Deliverables of the Ames ML Experiment*
 
@@ -140,9 +154,9 @@ While deploying the best model, an Ames ML Experiment shall:
 + [EARS – The Easy Approach to Requirements Syntax](https://qracorp.com/easy-approach-to-requirements-syntax-ears-guide/)
 + [Udacity: Capstone - Azure Machine Learning Engineer - Project Specification](https://review.udacity.com/#!/rubrics/2864/view)
 + [MS Docs: What is automated machine learning (AutoML)?](https://docs.microsoft.com/en-us/azure/machine-learning/concept-automated-ml?view=azure-ml-py)
++ [MS Docs: Train with the Python SDK](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-set-up-training-targets)
 + [MS Docs: Hyperparameter tuning a model with Azure Machine Learning](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-tune-hyperparameters?view=azure-ml-py)
 + [MS Docs: Consume an Azure Machine Learning model deployed as a web service](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-consume-web-service?view=azure-ml-py&tabs=python#call-the-service-python)
-+ [MS GitHub: Training of Python scikit-learn models on Azure Example](https://github.com/microsoft/MLHyperparameterTuning)
-+ 
++ [MS GitHub: Training of Python scikit-learn models on Azure Example](https://github.com/microsoft/MLHyperparameterTuning)+ 
 
 <!--  -->
