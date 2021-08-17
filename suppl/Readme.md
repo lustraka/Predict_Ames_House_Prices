@@ -15,10 +15,11 @@
   - the logs and metrics of a web service
 - [ ] Screencast: working model, deployed model, sample request and response, application insights, prd
 
-## Service Deployment Failure (ModuleNotFoundError, 2021-08-16)
+## Service Deployment Failures
+### Errors
 **Context**: The Python SDK in Azure ML Studio is running `Model.deploy()` method as in [MS Docs: Deploy again and call your service](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-deploy-and-where?tabs=python#deploy-again-and-call-your-service) or [MS Docs: Deploy in ACI](https://docs.microsoft.com/en-us/azure/machine-learning/tutorial-deploy-models-with-aml#deploy-in-aci).
 
-**Error** while "Checking the status of inference endpoint xxx" (2021-08-16):
+**Error** while "Checking the status of inference endpoint xxx" (2021-08-16, Capstone Project Workspace Lab):
 
 ```
 ERROR:azureml.core.webservice.webservice:Service deployment polling reached non-successful terminal state, current service state: Unhealthy
@@ -38,7 +39,7 @@ Error:
 }
 ```
 
-**Error** while "Checking the status of inference endpoint xxx" (2021-08-17):
+**Error** while "Checking the status of inference endpoint xxx" (2021-08-17, Project Optimizing an ML Pipeline Workspace Lab):
 
 ```
 Service deployment polling reached non-successful terminal state, current service state: Failed
@@ -82,7 +83,10 @@ Error:
 
 ```
 
-**Analysis**:
+Note: The error above occured only when deploying the AutoML model. The XGB/hdr model was deployed successfully!
+
+### Analysis
+**Observations**:
 + An entry script proved working well in previous runs and no object from 'azureml.api' occurs in its code.
 + The return value of service.get_logs() is None.
 + Deployment was successful in previous runs. Difference is in the virtual machine environment (various Udacity Labs).
@@ -100,19 +104,18 @@ env.python.conda_dependencies = cd
 env.register(workspace=ws)
 ```
 
-**Solution** Proposals: 
+**Enable Docker** Trial: 
 
-As the problem origins from an environment within Azure Container Instance (ACI), its cause is most probably in an environment setup. Try:
-+ [Enable Docker](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-use-environments#enable-docker) before registering the environment:
+As the problem origins from an environment within Azure Container Instance (ACI), its cause is most probably in an environment setup. Try [Enable Docker](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-use-environments#enable-docker) before registering the environment:
 
 ```
 # Creates the environment inside a Docker container.
 env.docker.enabled = True
 ```
 
-But this setting displays warnning: 'enabled' is deprecated. Please use the azureml.core.runconfig.DockerConfiguration object ([StackOverflow: How to use it](https://stackoverflow.com/questions/67387249/how-to-use-azureml-core-runconfig-dockerconfiguration-class-in-azureml-core-envi)) with the 'use_docker' param instead.
+2021-08-17: But this setting displays warnning: 'enabled' is deprecated. Please use the azureml.core.runconfig.DockerConfiguration object ([StackOverflow: How to use it](https://stackoverflow.com/questions/67387249/how-to-use-azureml-core-runconfig-dockerconfiguration-class-in-azureml-core-envi)) with the 'use_docker' param instead. Despites it doesn't solve the problem.
 
-+ Create more complete environment with `CondaDependencies.create()` as in [Github: Image Classification Tutorial](https://github.com/Azure/MachineLearningNotebooks/tree/master/tutorials/image-classification-mnist-data) for example.
+Another tip: Create more complete environment with `CondaDependencies.create()` as in [Github: Image Classification Tutorial](https://github.com/Azure/MachineLearningNotebooks/tree/master/tutorials/image-classification-mnist-data) for example.
 
 
 # References
