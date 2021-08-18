@@ -139,7 +139,7 @@ The endpoint of the model is consumed using Python SDK code as documented in the
 1. **ONNX**. The `ennable_onnx_compatible_models=True` parameter of `AutoMLConfig` ensures an ONNX model in the automated ML run outputs. There is no code for converting XGBoostRegressor to the ONNX format due to time constraints. So this standout is a bit half-baked.
 2. Model deployment to the Edge using Azure IoT Edge was not attempted.
 3. **Logging**. The deployment configuration (`AciWebservice.deploy_configuration()`) sets up the `enable_app_insights=True` parameter, so a web service enpoint can be monitored and data from it can be collected through Azure Application Insights.
-4. [**Product Requirements Document**](../prd/Readme.md) defines an Ames ML Experiment's requirements, including its purpose, features, functionality, and behavior. It offers a business view of the project.
+4. [**Product Requirements Document**](prd/Readme.md) defines an Ames ML Experiment's requirements, including its purpose, features, functionality, and behavior. It offers a business view of the project.
 
 ## Backlog of Improvements
 As the initial iteration of the Ames Housing Experiment if over, a machine learning engineer shall consider these improvements in future iterations:
