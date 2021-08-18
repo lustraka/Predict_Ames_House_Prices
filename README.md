@@ -70,3 +70,11 @@ These are Tree Booster parameters. Other parameters are left with their default 
 
 ## Standout Suggestions
 *TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
+
+## Backlog of Improvements
+As the initial iteration of the Ames Housing Experiment if over, a machine learning engineer shall consider these improvements in future itearations:
++ Apply feature engineering. Carefully constructed features have a great potential to improve models' performance.
++ Enable deep learning with neural networks if there are more resources. Neural networks, when configured and trained properly, may have better performance than linear or tree-based models. It is at costs of explainability, though.
++ Use pipelines. Pipelines implement continuous integration, development, and testing to ensure consistent and quality code, that is readily available to users.
++ Use BayesianSampling in the HyperDrive tuning. Bayesian sampling tries to intelligently pick the next sample of hyperparameters, based on how the previous samples performed, such that the new sample improves the reported primary metric.
++ Use a PublishedPipeline, the pipeline to be submitted without the Pyton code which constructed it. The PublishedPipeline can be used to resubmit a pipeline with diferent parameter values and inputs and enabels "managed repeatability" in batch scoring and retraining scenarios.
