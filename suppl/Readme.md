@@ -39,7 +39,7 @@ Error:
 }
 ```
 
-**Error** while "Checking the status of inference endpoint xxx" (2021-08-17, Project Optimizing an ML Pipeline Workspace Lab):
+**Error** while "Checking the status of inference endpoint xxx" (2021-08-17, Optimizing an ML Pipeline Project's Workspace Lab | 2021-08-18, Machine Learning Operations Project's Workspace Lab):
 
 ```
 Service deployment polling reached non-successful terminal state, current service state: Failed
@@ -119,5 +119,9 @@ Another tip: Create more complete environment with `CondaDependencies.create()` 
 
 
 # References
-+ [Optimizing an ML Pipeline in Azure Project Review](https://review.udacity.com/#!/reviews/3017477)
-+ [Operationalizing Machine Learning Project Review](https://review.udacity.com/#!/reviews/3053642)
++ [MSDocs: Troubleshooting remote model deployment](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-troubleshoot-deployment?tabs=python)
++ [MSDocs: Troubleshooting with a local model deployment](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-troubleshoot-deployment-local)
++ [What are Azure Machine Learning environments?](https://docs.microsoft.com/en-us/azure/machine-learning/concept-environments)
+---
++ [Udacity: Optimizing an ML Pipeline in Azure Project Review](https://review.udacity.com/#!/reviews/3017477)
++ [Udacity:Operationalizing Machine Learning Project Review](https://review.udacity.com/#!/reviews/3053642)
