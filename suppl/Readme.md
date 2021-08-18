@@ -1,21 +1,17 @@
 # Predict House Prices - Supplement
 ## To-Dos
 - [ ] ipynb > Dataset: Correct articles and word order.
+- [ ] ipynb > ACI deployment: in `myenv = Environment.get(workspace=ws, name="project-env", version="1")` delete `, version="1")`
 - [ ] xgb.ipynb: Provide details of the best model (and document the parameters of that model)
 - [ ] xgb: Emphasize the effects of the different hyperparemeters on the primary metric of your model
-- [ ] Readme: Provide short overview of how to improve the project in the future
-  - [ ] Use feature engineering
-  - [ ] Enable neural networks and deep learning
-  - [ ] Use pipelines
-  - [ ] Use Bayesian sampling for more profound hyperparameter sampling
-  - [ ] Learn how to retrain and re-deploy the model
+- [x] Readme: Provide short overview of how to improve the project in the future
 - [ ] Take screenshots: 
   - RunDetails, performance of different models and the best models (aml + hdr | sdk + gui), 
   - the model endpoint is active (sdk + gui), 
   - the logs and metrics of a web service
 - [ ] Screencast: working model, deployed model, sample request and response, application insights, prd
 
-## Service Deployment Failures
+## ACI Deployment Failures
 ### Errors
 **Context**: The Python SDK in Azure ML Studio is running `Model.deploy()` method as in [MS Docs: Deploy again and call your service](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-deploy-and-where?tabs=python#deploy-again-and-call-your-service) or [MS Docs: Deploy in ACI](https://docs.microsoft.com/en-us/azure/machine-learning/tutorial-deploy-models-with-aml#deploy-in-aci).
 
