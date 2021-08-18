@@ -109,7 +109,7 @@ As the problem origins from an environment within Azure Container Instance (ACI)
 env.docker.enabled = True
 ```
 
-2021-08-17: But this setting displays warnning: 'enabled' is deprecated. Please use the azureml.core.runconfig.DockerConfiguration object ([StackOverflow: How to use it](https://stackoverflow.com/questions/67387249/how-to-use-azureml-core-runconfig-dockerconfiguration-class-in-azureml-core-envi)) with the 'use_docker' param instead. Despites it doesn't solve the problem.
+2021-08-17: This setting displays warnning: 'enabled' is deprecated. Please use the azureml.core.runconfig.DockerConfiguration object ([StackOverflow: How to use it](https://stackoverflow.com/questions/67387249/how-to-use-azureml-core-runconfig-dockerconfiguration-class-in-azureml-core-envi)) with the 'use_docker' param instead. Furthermore, it doesn't eliminate the AciDeploymentFailed error.
 
 Another tip: Create more complete environment with `CondaDependencies.create()` as in [Github: Image Classification Tutorial](https://github.com/Azure/MachineLearningNotebooks/tree/master/tutorials/image-classification-mnist-data) for example.
 
@@ -117,7 +117,7 @@ Another tip: Create more complete environment with `CondaDependencies.create()` 
 # References
 + [MSDocs: Troubleshooting remote model deployment](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-troubleshoot-deployment?tabs=python)
 + [MSDocs: Troubleshooting with a local model deployment](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-troubleshoot-deployment-local)
-+ [What are Azure Machine Learning environments?](https://docs.microsoft.com/en-us/azure/machine-learning/concept-environments)
++ [MSDocs: What are Azure Machine Learning environments?](https://docs.microsoft.com/en-us/azure/machine-learning/concept-environments)
 ---
 + [Udacity: Optimizing an ML Pipeline in Azure Project Review](https://review.udacity.com/#!/reviews/3017477)
-+ [Udacity:Operationalizing Machine Learning Project Review](https://review.udacity.com/#!/reviews/3053642)
++ [Udacity: Operationalizing Machine Learning Project Review](https://review.udacity.com/#!/reviews/3053642)
