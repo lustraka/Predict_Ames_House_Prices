@@ -7,6 +7,12 @@ This is a final project of the Udacity Machine Learning Engineer with Microsoft 
 ## Project Set Up and Installation
 > *OPTIONAL:* If your project has any special installation steps, this is where you should put it. To turn this project into a professional portfolio project, you are encouraged to explain how to set up this project in AzureML.
 
+When an ML experiment is about to start, an ML engineer shall:
++ sign in to the Azure workspace, 
++ open Azure ML Studio,
++ create a compute instance to run Jupyter notebooks,
++ upload source code (Jupyter notebooks and Python scripts) from this GitHub repository.
+
 ## Dataset
 
 ### Overview
@@ -42,7 +48,37 @@ Number of cross validation is set to 3 as the dataset has more then 1.000 data p
 ### Results
 > *TODO*: What are the results you got with your automated ML model? What were the parameters of the model? How could you have improved it?
 
+```
+{'r2_score': 0.8942710428327086,
+ 'root_mean_squared_error': 25771.906465315406,
+ 'spearman_correlation': 0.9562738525955498,
+ 'mean_absolute_percentage_error': 9.197768325624113,
+ 'root_mean_squared_log_error': 0.13022613109168246,
+ 'normalized_root_mean_squared_error': 0.03578934379296681,
+ 'normalized_median_absolute_error': 0.014509132245016371,
+ 'normalized_mean_absolute_error': 0.021677741931194747,
+ 'explained_variance': 0.8944568099173953,
+ 'median_absolute_error': 10448.026129636288,
+ 'normalized_root_mean_squared_log_error': 0.04236093258268204,
+ 'mean_absolute_error': 15610.141964653338}
+```
+
+*Figure 2: The AutoML Best Run Metrics*
+
+The results of the automated ML model presented in figure 2 has been achieved by a voting ensemble presented in figure 3. Further improvements of these results could have been achieved mainly by prolonging experiment's timeout and by including DNN based models into the loop.
+
+![AutoML Voting Ensemble (click to see the image)](img/.png?raw=true)
+*Figure 3: AutoML Voting Ensemble*
+
 > *TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
+
+![AutoML RunDetails (click to see the image)](img/.png?raw=true)
+
+*Figure 4: AutoML RunDetails*
+
+![The Best AutoML Model (click to see the image)](img/.png?raw=true)
+
+*Figure 5: The Best AutoML Model*
 
 ## Hyperparameter Tuning
 > *TODO*: What kind of model did you choose for this experiment and why? Give an overview of the types of parameters and their ranges used for the hyperparameter search
@@ -57,19 +93,53 @@ These are Tree Booster parameters. Other parameters are left with their default 
 ### Results
 > *TODO*: What are the results you got with your model? What were the parameters of the model? How could you have improved it?
 
+```
+{'Learning rate': 0.05776444084600065,
+ 'Gamma': 8.12061751815267,
+ 'Maximum depth': 7.0,
+ 'r2_score': 0.9130778329488691}
+```
+
+*Figure 6: The HyperDrive Best Run Metrics*
+
+Both the results of the HyperDrive tuning and corresponding parameters  of the XGBoost Regressor are presented in figure 6. Further improvements of these results could have been achieved mainly by increasing the number of total runs and by using Bayesian sampling instead of random parameter sampling.
+
 > *TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
 
+![HyperDrive RunDetails (click to see the image)](img/.png?raw=true)
+
+*Figure 7: HyperDrive RunDetails*
+
+![The Best HyperDrive Model (click to see the image)](img/.png?raw=true)
+
+*Figure 8: The Best HyperDrive Model*
+
+
 ## Model Deployment
-*TODO*: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.
+> *TODO*: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.
+
+The best model has been deployed remotely on the CPU Cluster in line with MS guidelines "[Deploy machine learning models to Azure](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-deploy-and-where?tabs=python)".
+
+![Endpoint of the Model (click to see the image)](img/.png?raw=true)
+
+*Figure 9: Endpoint of the Model*
+
+The endpoint of the model is consumed using Python SDK code as documented in the Python notebook.
 
 ## Screen Recording
-*TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
-- A working model
-- Demo of the deployed  model
-- Demo of a sample request sent to the endpoint and its response
+> *TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
+> - A working model
+> - Demo of the deployed  model
+> - Demo of a sample request sent to the endpoint and its response
+
+[Screencast here]()
 
 ## Standout Suggestions
 *TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
+1. **ONNX**. The `ennable_onnx_compatible_models=True` parameter of `AutoMLConfig` ensures an ONNX model in the automated ML run outputs. There is no code for converting XGBoostRegressor to the ONNX format due to time constraints. So this standout is a bit half-baked.
+2. Model deployment to the Edge using Azure IoT Edge was not attempted.
+3. **Logging**. The deployment configuration (`AciWebservice.deploy_configuration()`) sets up the `enable_app_insights=True` parameter, so a web service enpoint can be monitored and data from it can be collected through Azure Application Insights.
+4. [**Product Requirements Document**](../prd/Readme.md) defines an Ames ML Experiment's requirements, including its purpose, features, functionality, and behavior. It offers a business view of the project.
 
 ## Backlog of Improvements
 As the initial iteration of the Ames Housing Experiment if over, a machine learning engineer shall consider these improvements in future iterations:
@@ -78,3 +148,7 @@ As the initial iteration of the Ames Housing Experiment if over, a machine learn
 + Use pipelines. Pipelines implement continuous integration, development, and testing to ensure consistent and quality code, that is readily available to users.
 + Use BayesianSampling in the HyperDrive tuning. Bayesian sampling tries to intelligently pick the next sample of hyperparameters, based on how the previous samples performed, such that the new sample improves the reported primary metric.
 + Use a PublishedPipeline, the pipeline to be submitted without the Pyton code which constructed it. The PublishedPipeline can be used to resubmit a pipeline with diferent parameter values and inputs and enabels "managed repeatability" in batch scoring and retraining scenarios.
+<!--
+![ (click to see the image)](img/.png?raw=true)
+*Figure _: *
+-->
