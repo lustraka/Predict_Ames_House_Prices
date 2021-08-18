@@ -140,11 +140,20 @@ While cleaning up resources, an Ames ML Exeriment shall:
 # Open Issues
 > What factors do you still need to figure out?
 
+**ACI Deployment Failure** occuring under certain conditions (see [Supplement](../suppl/Readme.md)).
+
 # Q&A
 > What are common questions about the product along with the answers you’ve decided? This is a good place to note key decisions.
 
 # Other Considerations
 > This is a catch-all for anything else, such as if you make a key decision to remove or add to the project’s scope.
+
+A machine learning engineer shall consider these improvements in his future work:
++ Apply feature engineering. Carefully constructed features have a great potential to improve models' performance.
++ Enable deep learning with neural networks if there are more resources. Neural networks, when configured and trained properly, may have better performance than linear or tree-based models. It is at costs of explainability, though.
++ Use pipelines. Pipelines implement continuous integration, development, and testing to ensure consistent and quality code, that is readily available to users.
++ Use BayesianSampling in the HyperDrive tuning. Bayesian sampling tries to intelligently pick the next sample of hyperparameters, based on how the previous samples performed, such that the new sample improves the reported primary metric.
++ Use a PublishedPipeline, the pipeline to be submitted without the Pyton code which constructed it. The PublishedPipeline can be used to resubmit a pipeline with diferent parameter values and inputs and enabels "managed repeatability" in batch scoring and retraining scenarios.
 
 # References
 + [Udacity: Machine Learning Engineer for Microsoft Azure Nanodegree Program](https://www.udacity.com/course/machine-learning-engineer-for-microsoft-azure-nanodegree--nd00333)
