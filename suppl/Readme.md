@@ -60,10 +60,8 @@ Note: The error above occured only when deploying the AutoML model. The XGB/hdr 
 
 ### Analysis
 **Observations**:
-+ An entry script proved working well in previous runs and no object from 'azureml.api' occurs in its code.
 + The return value of service.get_logs() is None.
-+ Deployment was successful in previous runs. Difference is in the virtual machine environment (various Udacity Labs).
-+ No same or similar problem found in the Internet search (StackOverflow et al.).
++ No same or similar problem found in the Internet search (StackOverflow, Udacity Help Forum et al.).
 + An initial set up of the inference config environment:
 
 ```
