@@ -13,47 +13,27 @@
 ### Errors
 **Context**: The Python SDK in Azure ML Studio is running `Model.deploy()` method as in [MS Docs: Deploy again and call your service](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-deploy-and-where?tabs=python#deploy-again-and-call-your-service) or [MS Docs: Deploy in ACI](https://docs.microsoft.com/en-us/azure/machine-learning/tutorial-deploy-models-with-aml#deploy-in-aci).
 
-**Error** while "Checking the status of inference endpoint xxx" (2021-08-16, Capstone Project Workspace Lab):
-
-```
-ERROR:azureml.core.webservice.webservice:Service deployment polling reached non-successful terminal state, current service state: Unhealthy
-Operation ID: 238ed8fc-ce62-4929-a516-3ac8ad5de684
-More information can be found using '.get_logs()'
-Error:
-{
-  "code": "AciDeploymentFailed",
-  "statusCode": 400,
-  "message": "Aci Deployment failed with exception: Error in entry script, ModuleNotFoundError: No module named 'azureml.api', please run print(service.get_logs()) to get details.",
-  "details": [
-    {
-      "code": "CrashLoopBackOff",
-      "message": "Error in entry script, ModuleNotFoundError: No module named 'azureml.api', please run print(service.get_logs()) to get details."
-    }
-  ]
-}
-```
-
-**Error** while "Checking the status of inference endpoint xxx" (2021-08-17, Optimizing an ML Pipeline Project's Workspace Lab | 2021-08-18, Machine Learning Operations Project's Workspace Lab):
+**Error** while "Checking the status of inference endpoint ames-housing-aml-xxxx." (2021-08-17, Optimizing an ML Pipeline Project Lab's Workspace | 2021-08-18, Machine Learning Operations Project Lab's Workspace | 2021-08-19 Capstone Project Lab's Workspace):
 
 ```
 Service deployment polling reached non-successful terminal state, current service state: Failed
-Operation ID: c2001590-c5b1-4df2-a776-c1ab16e2d667
+Operation ID: e29418d6-3866-4603-91f8-0b2cb756ebc1
 More information can be found using '.get_logs()'
 Error:
 {
   "code": "AciDeploymentFailed",
   "statusCode": 400,
   "message": "Aci Deployment failed with exception: Your container application crashed. This may be caused by errors in your scoring file's init() function.
-	1. Please check the logs for your container instance: ames-housing-aml-4764. From the AML SDK, you can run print(service.get_logs()) if you have service object to fetch the logs.
+	1. Please check the logs for your container instance: ames-housing-aml-0812. From the AML SDK, you can run print(service.get_logs()) if you have service object to fetch the logs.
 	2. You can interactively debug your scoring file locally. Please refer to https://docs.microsoft.com/azure/machine-learning/how-to-debug-visual-studio-code#debug-and-troubleshoot-deployments for more information.
-	3. You can also try to run image dd6f3b7a20804f76936d1c66a4b2327b.azurecr.io/azureml/azureml_cc64be7f6bb8ba76d06a5c38b75b1a4c locally. Please refer to https://aka.ms/debugimage#service-launch-fails for more information.",
+	3. You can also try to run image c726cd197c8d4e64902174bc769dc498.azurecr.io/azureml/azureml_e434aed78f9426216c7e0e89c0851446 locally. Please refer to https://aka.ms/debugimage#service-launch-fails for more information.",
   "details": [
     {
       "code": "CrashLoopBackOff",
       "message": "Your container application crashed. This may be caused by errors in your scoring file's init() function.
-	1. Please check the logs for your container instance: ames-housing-aml-4764. From the AML SDK, you can run print(service.get_logs()) if you have service object to fetch the logs.
+	1. Please check the logs for your container instance: ames-housing-aml-0812. From the AML SDK, you can run print(service.get_logs()) if you have service object to fetch the logs.
 	2. You can interactively debug your scoring file locally. Please refer to https://docs.microsoft.com/azure/machine-learning/how-to-debug-visual-studio-code#debug-and-troubleshoot-deployments for more information.
-	3. You can also try to run image dd6f3b7a20804f76936d1c66a4b2327b.azurecr.io/azureml/azureml_cc64be7f6bb8ba76d06a5c38b75b1a4c locally. Please refer to https://aka.ms/debugimage#service-launch-fails for more information."
+	3. You can also try to run image c726cd197c8d4e64902174bc769dc498.azurecr.io/azureml/azureml_e434aed78f9426216c7e0e89c0851446 locally. Please refer to https://aka.ms/debugimage#service-launch-fails for more information."
     },
     {
       "code": "AciDeploymentFailed",
@@ -64,17 +44,16 @@ Error:
 	4. View the diagnostic events to check status of container, it may help you to debug the issue.
 "RestartCount": 3
 "CurrentState": {"state":"Waiting","startTime":null,"exitCode":null,"finishTime":null,"detailStatus":"CrashLoopBackOff: Back-off restarting failed"}
-"PreviousState": {"state":"Terminated","startTime":"2021-08-17T06:22:58.07Z","exitCode":111,"finishTime":"2021-08-17T06:23:03.311Z","detailStatus":"Error"}
+"PreviousState": {"state":"Terminated","startTime":"2021-08-19T06:24:07.256Z","exitCode":111,"finishTime":"2021-08-19T06:24:13.387Z","detailStatus":"Error"}
 "Events":
-{"count":1,"firstTimestamp":"2021-08-17T06:19:02Z","lastTimestamp":"2021-08-17T06:19:02Z","name":"Pulling","message":"pulling image "dd6f3b7a20804f76936d1c66a4b2327b.azurecr.io/azureml/azureml_cc64be7f6bb8ba76d06a5c38b75b1a4c@sha256:d56acb2ceca66853a16954e02fb629b7715da3e6c792ef4814d7816e486569a7"","type":"Normal"}
-{"count":1,"firstTimestamp":"2021-08-17T06:21:17Z","lastTimestamp":"2021-08-17T06:21:17Z","name":"Pulled","message":"Successfully pulled image "dd6f3b7a20804f76936d1c66a4b2327b.azurecr.io/azureml/azureml_cc64be7f6bb8ba76d06a5c38b75b1a4c@sha256:d56acb2ceca66853a16954e02fb629b7715da3e6c792ef4814d7816e486569a7"","type":"Normal"}
-{"count":4,"firstTimestamp":"2021-08-17T06:21:37Z","lastTimestamp":"2021-08-17T06:22:58Z","name":"Started","message":"Started container","type":"Normal"}
-{"count":4,"firstTimestamp":"2021-08-17T06:21:42Z","lastTimestamp":"2021-08-17T06:23:03Z","name":"Killing","message":"Killing container with id 8268c79f6bfb00e2e2525c5d96d3ed4d998663539d8d8a96c44f058d21d88ecf.","type":"Normal"}
+{"count":2,"firstTimestamp":"2021-08-19T06:18:58Z","lastTimestamp":"2021-08-19T06:22:20Z","name":"Pulling","message":"pulling image "c726cd197c8d4e64902174bc769dc498.azurecr.io/azureml/azureml_e434aed78f9426216c7e0e89c0851446@sha256:f108f3922cd028c69f1560739e46003bcf3560a181056de8621ed8ec237a3057"","type":"Normal"}
+{"count":2,"firstTimestamp":"2021-08-19T06:22:20Z","lastTimestamp":"2021-08-19T06:22:20Z","name":"Pulled","message":"Successfully pulled image "c726cd197c8d4e64902174bc769dc498.azurecr.io/azureml/azureml_e434aed78f9426216c7e0e89c0851446@sha256:f108f3922cd028c69f1560739e46003bcf3560a181056de8621ed8ec237a3057"","type":"Normal"}
+{"count":4,"firstTimestamp":"2021-08-19T06:22:34Z","lastTimestamp":"2021-08-19T06:24:07Z","name":"Started","message":"Started container","type":"Normal"}
+{"count":4,"firstTimestamp":"2021-08-19T06:22:39Z","lastTimestamp":"2021-08-19T06:24:13Z","name":"Killing","message":"Killing container with id 66ba6b84d7282b5366c98e93782b19716a0da22f87ecf844a4f813ffe9753c32.","type":"Normal"}
 "
     }
   ]
 }
-
 ```
 
 Note: The error above occured only when deploying the AutoML model. The XGB/hdr model was deployed successfully!
@@ -119,3 +98,25 @@ Another tip: Create more complete environment with `CondaDependencies.create()` 
 ---
 + [Udacity: Optimizing an ML Pipeline in Azure Project Review](https://review.udacity.com/#!/reviews/3017477)
 + [Udacity: Operationalizing Machine Learning Project Review](https://review.udacity.com/#!/reviews/3053642)
+
+# Appendix
+
+**Error** while "Checking the status of inference endpoint xxx" (2021-08-16, Capstone Project Lab's Workspace). This error occured only once in a scenario, when the deployment of AutoML Model comes first. Then the same failure ended up the XGB model deployment:
+
+```
+ERROR:azureml.core.webservice.webservice:Service deployment polling reached non-successful terminal state, current service state: Unhealthy
+Operation ID: 238ed8fc-ce62-4929-a516-3ac8ad5de684
+More information can be found using '.get_logs()'
+Error:
+{
+  "code": "AciDeploymentFailed",
+  "statusCode": 400,
+  "message": "Aci Deployment failed with exception: Error in entry script, ModuleNotFoundError: No module named 'azureml.api', please run print(service.get_logs()) to get details.",
+  "details": [
+    {
+      "code": "CrashLoopBackOff",
+      "message": "Error in entry script, ModuleNotFoundError: No module named 'azureml.api', please run print(service.get_logs()) to get details."
+    }
+  ]
+}
+```
