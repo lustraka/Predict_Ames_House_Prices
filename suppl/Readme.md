@@ -1,8 +1,6 @@
 # Predict House Prices - Supplement
 ## To-Dos
-- [ ] ipynb > Dataset: Correct articles and word order.
-- [ ] ipynb > ACI deployment: in `myenv = Environment.get(workspace=ws, name="project-env", version="1")` delete `, version="1")`
-- [ ] xgb.ipynb: Provide details of the best model (and document the parameters of that model)
+- [x] ipynb > ACI deployment: in `myenv = Environment.get(workspace=ws, name="project-env", version="1")` delete `, version="1")`
 - [ ] xgb: Emphasize the effects of the different hyperparemeters on the primary metric of your model
 - [x] Readme: Provide short overview of how to improve the project in the future
 - [ ] Take screenshots: 
