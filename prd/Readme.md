@@ -5,6 +5,7 @@
 # Change History
 > A PRD is a living document that should be continuously updated according to the product’s lifecycle.
 + 2021-07-28 LS starts writing product requirements for the Ames ML experiment.
++ 2021-08-20 LS publishes the first version even though there is a space for improvements.
 
 # Overview
 > Briefly, what is this project about?  Why are you doing it?
