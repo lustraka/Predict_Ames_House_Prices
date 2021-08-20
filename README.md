@@ -155,7 +155,7 @@ The endpoint of the model is consumed using Python SDK code as documented in the
 > - Demo of the deployed  model
 > - Demo of a sample request sent to the endpoint and its response
 
-[Screencast here]()
+[Screencast here](https://www.loom.com/share/43edfe51b6b8481eaa11987c8139e674?sharedAppSource=personal_library)
 
 ## Standout Suggestions
 *TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
