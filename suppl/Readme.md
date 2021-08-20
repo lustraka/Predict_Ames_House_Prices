@@ -88,6 +88,12 @@ env.docker.enabled = True
 
 Another tip: Create more complete environment with `CondaDependencies.create()` as in [Github: Image Classification Tutorial](https://github.com/Azure/MachineLearningNotebooks/tree/master/tutorials/image-classification-mnist-data) for example.
 
+### Solution
+Use the **AzureML-AutoML** environment as a deployment environment:
+```
+env = Environment.get(workspace=ws, name="AzureML-AutoML")
+```
+This resolves the dependency issues in the deployment environment.
 
 # References
 + [MSDocs: Troubleshooting remote model deployment](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-troubleshoot-deployment?tabs=python)
