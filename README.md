@@ -66,17 +66,22 @@ Number of cross validation is set to 3 as the dataset has more then 1.000 data p
 The results of the automated ML model presented in figure 2 has been achieved by a voting ensemble presented in figure 3. Further improvements of these results could have been achieved mainly by prolonging experiment's timeout and by including DNN based models into the loop.
 
 ![AutoML Voting Ensemble (click to see the image)](img/azml-3-automl-ensemble.png?raw=true)
+
 *Figure 3: AutoML Voting Ensemble*
 
 > *TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
 
 ![AutoML RunDetails (click to see the image)](img/azml-4a-running-automl.png?raw=true)
 
+---
+
 ![AutoML RunDetails (click to see the image)](img/azml-4b-running-automl.png?raw=true)
 
 *Figure 4: AutoML RunDetails*
 
 ![The Best AutoML Model (click to see the image)](img/azml-5a-best-automl-model.png?raw=true)
+
+---
 
 ![The Best AutoML Model (click to see the image)](img/azml-5b-best-automl-model.png?raw=true)
 
@@ -110,7 +115,11 @@ Both the results of the HyperDrive tuning and corresponding parameters  of the X
 
 ![HyperDrive RunDetails (click to see the image)](img/azml-7a-running-hdr.png?raw=true)
 
+---
+
 ![HyperDrive RunDetails (click to see the image)](img/azml-7b-running-hdr.png?raw=true)
+
+---
 
 ![HyperDrive RunDetails (click to see the image)](img/azml-7c-running-hdr.png?raw=true)
 
@@ -127,6 +136,8 @@ Both the results of the HyperDrive tuning and corresponding parameters  of the X
 The best model has been deployed remotely on the CPU Cluster in line with MS guidelines "[Deploy machine learning models to Azure](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-deploy-and-where?tabs=python)".
 
 ![Endpoint of the Model (click to see the image)](img/azml-9a-endpoint.png?raw=true)
+
+---
 
 ![Endpoint of the Model (click to see the image)](img/azml-9b-endpoint.png?raw=true)
 
