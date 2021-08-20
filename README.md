@@ -49,34 +49,38 @@ Number of cross validation is set to 3 as the dataset has more then 1.000 data p
 > *TODO*: What are the results you got with your automated ML model? What were the parameters of the model? How could you have improved it?
 
 ```
-{'r2_score': 0.8942710428327086,
- 'root_mean_squared_error': 25771.906465315406,
- 'spearman_correlation': 0.9562738525955498,
- 'mean_absolute_percentage_error': 9.197768325624113,
- 'root_mean_squared_log_error': 0.13022613109168246,
- 'normalized_root_mean_squared_error': 0.03578934379296681,
+{'normalized_root_mean_squared_error': 0.03578930551264211,
+ 'root_mean_squared_log_error': 0.1302258721688295,
+ 'explained_variance': 0.8944570643792374,
+ 'normalized_root_mean_squared_log_error': 0.04236084835831457,
  'normalized_median_absolute_error': 0.014509132245016371,
- 'normalized_mean_absolute_error': 0.021677741931194747,
- 'explained_variance': 0.8944568099173953,
+ 'root_mean_squared_error': 25771.878899653584,
  'median_absolute_error': 10448.026129636288,
- 'normalized_root_mean_squared_log_error': 0.04236093258268204,
- 'mean_absolute_error': 15610.141964653338}
+ 'spearman_correlation': 0.9562762595312719,
+ 'mean_absolute_error': 15609.99578903144,
+ 'mean_absolute_percentage_error': 9.19763905867747,
+ 'normalized_mean_absolute_error': 0.021677538937691213,
+ 'r2_score': 0.8942712633731941}
 ```
 
 *Figure 2: The AutoML Best Run Metrics*
 
 The results of the automated ML model presented in figure 2 has been achieved by a voting ensemble presented in figure 3. Further improvements of these results could have been achieved mainly by prolonging experiment's timeout and by including DNN based models into the loop.
 
-![AutoML Voting Ensemble (click to see the image)](img/.png?raw=true)
+![AutoML Voting Ensemble (click to see the image)](img/azml-3-automl-ensemble.png?raw=true)
 *Figure 3: AutoML Voting Ensemble*
 
 > *TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
 
-![AutoML RunDetails (click to see the image)](img/.png?raw=true)
+![AutoML RunDetails (click to see the image)](img/azml-4a-running-automl.png?raw=true)
+
+![AutoML RunDetails (click to see the image)](img/azml-4b-running-automl.png?raw=true)
 
 *Figure 4: AutoML RunDetails*
 
-![The Best AutoML Model (click to see the image)](img/.png?raw=true)
+![The Best AutoML Model (click to see the image)](img/azml-5a-best-automl-model.png?raw=true)
+
+![The Best AutoML Model (click to see the image)](img/azml-5b-best-automl-model.png?raw=true)
 
 *Figure 5: The Best AutoML Model*
 
@@ -94,10 +98,10 @@ These are Tree Booster parameters. Other parameters are left with their default 
 > *TODO*: What are the results you got with your model? What were the parameters of the model? How could you have improved it?
 
 ```
-{'Learning rate': 0.05776444084600065,
- 'Gamma': 8.12061751815267,
- 'Maximum depth': 7.0,
- 'r2_score': 0.9130778329488691}
+{'Learning rate': 0.06745453327900494,
+ 'Gamma': 7.785960174043349,
+ 'Maximum depth': 5.0,
+ 'r2_score': 0.9079294218993269}
 ```
 
 *Figure 6: The HyperDrive Best Run Metrics*
@@ -106,11 +110,15 @@ Both the results of the HyperDrive tuning and corresponding parameters  of the X
 
 > *TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
 
-![HyperDrive RunDetails (click to see the image)](img/.png?raw=true)
+![HyperDrive RunDetails (click to see the image)](img/azml-7a-running-hdr.png?raw=true)
+
+![HyperDrive RunDetails (click to see the image)](img/azml-7b-running-hdr.png?raw=true)
+
+![HyperDrive RunDetails (click to see the image)](img/azml-7c-running-hdr.png?raw=true)
 
 *Figure 7: HyperDrive RunDetails*
 
-![The Best HyperDrive Model (click to see the image)](img/.png?raw=true)
+![The Best HyperDrive Model (click to see the image)](img/azml-8-best-hdr-model.png?raw=true)
 
 *Figure 8: The Best HyperDrive Model*
 
