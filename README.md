@@ -1,7 +1,5 @@
 # Predict House Prices in Ames, Iowa
 
-(🚧 under construction 🚧)
-
 This is a final project of the Udacity Machine Learning Engineer with Microsoft Azure Nanodegree Program. The project's goal is to train and deploy a machine learning model for **prediction of the sales price based on parameters of a house**. The project starts with importing a dataset from Kaggle. To find the best model, the project compares performance of models trained using Automated ML and one customized model whose hyperparameters are tuned using HyperDrive in the Microsoft Azure's ecosystem. The project wraps up with deploying the best model and testing its endpoint.
 
 ## Project Set Up and Installation
@@ -128,7 +126,9 @@ Both the results of the HyperDrive tuning and corresponding parameters  of the X
 
 The best model has been deployed remotely on the CPU Cluster in line with MS guidelines "[Deploy machine learning models to Azure](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-deploy-and-where?tabs=python)".
 
-![Endpoint of the Model (click to see the image)](img/.png?raw=true)
+![Endpoint of the Model (click to see the image)](img/azml-9a-endpoint.png?raw=true)
+
+![Endpoint of the Model (click to see the image)](img/azml-9b-endpoint.png?raw=true)
 
 *Figure 9: Endpoint of the Model*
 
