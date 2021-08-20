@@ -133,7 +133,11 @@ Both the results of the HyperDrive tuning and corresponding parameters  of the X
 ## Model Deployment
 > *TODO*: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.
 
-The best model has been deployed remotely on the CPU Cluster in line with MS guidelines "[Deploy machine learning models to Azure](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-deploy-and-where?tabs=python)".
+The best model has been deployed remotely on the CPU Cluster in line with MS guidelines "[Deploy machine learning models to Azure](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-deploy-and-where?tabs=python)". The XGBoost Regressor model tuned by HyperDrive has better R2 score than the voting ensemble of automated ML.
+
+![The Best Model (click to see the image)](img/azml-8b-best-model.png?raw=true)
+
+---
 
 ![Endpoint of the Model (click to see the image)](img/azml-9a-endpoint.png?raw=true)
 
