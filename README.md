@@ -80,7 +80,6 @@ The results of the automated ML model presented in figure 2 has been achieved by
 *Figure 5: The Best AutoML Model*
 
 ## Hyperparameter Tuning
-> *TODO*: What kind of model did you choose for this experiment and why? Give an overview of the types of parameters and their ranges used for the hyperparameter search
 
 The HyperDrive experiment uses XGBoost regressor which has been the best performing model from the voting ensemble crafted by the AutoML experiment. Hyperparameters tuned are:
 + `learing_rate` alias `eta` is the step size shrinkage used in update to prevent overfiffing, its range is [0,1] and for search are used values in interval [0.01, 0.2] with log scale,
