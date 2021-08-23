@@ -1,13 +1,4 @@
 # Predict House Prices - Supplement
-## To-Dos
-- [x] ipynb > ACI deployment: in `myenv = Environment.get(workspace=ws, name="project-env", version="1")` delete `, version="1")`
-- [ ] xgb: Emphasize the effects of the different hyperparemeters on the primary metric of your model
-- [x] Readme: Provide short overview of how to improve the project in the future
-- [ ] Take screenshots: 
-  - RunDetails, performance of different models and the best models (aml + hdr | sdk + gui), 
-  - the model endpoint is active (sdk + gui), 
-  - the logs and metrics of a web service
-- [ ] Screencast: working model, deployed model, sample request and response, application insights, prd
 
 ## ACI Deployment Failures
 ### Errors
